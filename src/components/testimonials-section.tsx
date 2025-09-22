@@ -89,10 +89,10 @@ const TestimonialsSection = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-ginni-grey-900 mb-6 font-[family-name:var(--font-playfair)]">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 font-[family-name:var(--font-playfair)]">
             What Our Clients Say
           </h2>
-          <p className="text-xl text-ginni-grey-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Don't just take our word for it. Here's what our satisfied clients have to say about their experience.
           </p>
         </motion.div>
@@ -107,12 +107,12 @@ const TestimonialsSection = () => {
             transition={{ duration: 0.5 }}
             className="mb-8"
           >
-            <Card className="max-w-4xl mx-auto shadow-xl border-ginni-beige-200">
+            <Card className="max-w-4xl mx-auto shadow-xl border-gray-200">
               <CardContent className="p-8 md:p-12">
                 <div className="flex flex-col md:flex-row items-center md:items-start gap-6">
                   <div className="flex-shrink-0">
-                    <div className="w-20 h-20 bg-ginni-gold-100 rounded-full flex items-center justify-center">
-                      <span className="text-2xl font-bold text-ginni-gold-700">
+                    <div className="w-20 h-20 bg-amber-100 rounded-full flex items-center justify-center">
+                      <span className="text-2xl font-bold text-amber-700">
                         {currentTestimonial.name.charAt(0)}
                       </span>
                     </div>
@@ -120,18 +120,18 @@ const TestimonialsSection = () => {
                   <div className="flex-1 text-center md:text-left">
                     <div className="flex items-center justify-center md:justify-start mb-4">
                       {[...Array(currentTestimonial.rating)].map((_, i) => (
-                        <Star key={i} className="w-5 h-5 text-ginni-gold-400 fill-current" />
+                        <Star key={i} className="w-5 h-5 text-amber-400 fill-current" />
                       ))}
                     </div>
-                    <blockquote className="text-lg text-ginni-grey-700 mb-6 italic leading-relaxed">
+                    <blockquote className="text-lg text-gray-700 mb-6 italic leading-relaxed">
                       "{currentTestimonial.content}"
                     </blockquote>
                     <div>
-                      <h4 className="text-xl font-semibold text-ginni-grey-900">
+                      <h4 className="text-xl font-semibold text-gray-900">
                         {currentTestimonial.name}
                       </h4>
-                      <p className="text-ginni-grey-600">{currentTestimonial.role}</p>
-                      <p className="text-sm text-ginni-gold-600 mt-1">
+                      <p className="text-gray-600">{currentTestimonial.role}</p>
+                      <p className="text-sm text-amber-600 mt-1">
                         {currentTestimonial.project}
                       </p>
                     </div>
@@ -145,7 +145,7 @@ const TestimonialsSection = () => {
           <div className="flex items-center justify-center space-x-4 mb-8">
             <button
               onClick={prevTestimonial}
-              className="p-2 rounded-full bg-ginni-beige-100 hover:bg-ginni-gold-100 text-ginni-grey-600 hover:text-ginni-gold-600 transition-colors duration-200"
+              className="p-2 rounded-full bg-gray-100 hover:bg-amber-100 text-gray-600 hover:text-amber-600 transition-colors duration-200"
               aria-label="Previous testimonial"
             >
               <ChevronLeft className="w-5 h-5" />
@@ -159,8 +159,8 @@ const TestimonialsSection = () => {
                   onClick={() => goToTestimonial(index)}
                   className={`w-3 h-3 rounded-full transition-colors duration-200 ${
                     index === currentIndex
-                      ? "bg-ginni-gold-600"
-                      : "bg-ginni-beige-300 hover:bg-ginni-gold-300"
+                      ? "bg-amber-600"
+                      : "bg-gray-300 hover:bg-amber-300"
                   }`}
                   aria-label={`Go to testimonial ${index + 1}`}
                 />
@@ -169,7 +169,7 @@ const TestimonialsSection = () => {
 
             <button
               onClick={nextTestimonial}
-              className="p-2 rounded-full bg-ginni-beige-100 hover:bg-ginni-gold-100 text-ginni-grey-600 hover:text-ginni-gold-600 transition-colors duration-200"
+              className="p-2 rounded-full bg-gray-100 hover:bg-amber-100 text-gray-600 hover:text-amber-600 transition-colors duration-200"
               aria-label="Next testimonial"
             >
               <ChevronRight className="w-5 h-5" />
@@ -185,16 +185,16 @@ const TestimonialsSection = () => {
             className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center"
           >
             <div>
-              <div className="text-3xl font-bold text-ginni-gold-600 mb-2">150+</div>
-              <div className="text-ginni-grey-600">Projects Completed</div>
+              <div className="text-3xl font-bold text-amber-600 mb-2">150+</div>
+              <div className="text-gray-600">Projects Completed</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-ginni-gold-600 mb-2">98%</div>
-              <div className="text-ginni-grey-600">Client Satisfaction</div>
+              <div className="text-3xl font-bold text-amber-600 mb-2">98%</div>
+              <div className="text-gray-600">Client Satisfaction</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-ginni-gold-600 mb-2">8+</div>
-              <div className="text-ginni-grey-600">Years Experience</div>
+              <div className="text-3xl font-bold text-amber-600 mb-2">8+</div>
+              <div className="text-gray-600">Years Experience</div>
             </div>
           </motion.div>
         </div>

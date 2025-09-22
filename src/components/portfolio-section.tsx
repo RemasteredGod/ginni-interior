@@ -60,7 +60,7 @@ const PortfolioSection = () => {
     : portfolioItems.filter(item => item.category === activeCategory);
 
   return (
-    <section id="portfolio" className="py-20 bg-ginni-beige-50">
+    <section id="portfolio" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -69,10 +69,10 @@ const PortfolioSection = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-ginni-grey-900 mb-6 font-[family-name:var(--font-playfair)]">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 font-[family-name:var(--font-playfair)]">
             Our Portfolio
           </h2>
-          <p className="text-xl text-ginni-grey-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Explore our diverse collection of completed projects showcasing our design expertise.
           </p>
         </motion.div>
@@ -92,8 +92,8 @@ const PortfolioSection = () => {
                 onClick={() => setActiveCategory(category)}
                 className={`px-6 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
                   activeCategory === category
-                    ? "bg-ginni-gold-600 text-white"
-                    : "text-ginni-grey-600 hover:text-ginni-gold-600"
+                    ? "bg-amber-600 text-white"
+                    : "text-gray-600 hover:text-amber-600"
                 }`}
               >
                 {category}
@@ -126,7 +126,7 @@ const PortfolioSection = () => {
                   <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
                     <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
                     <p className="text-sm opacity-90">{item.description}</p>
-                    <span className="inline-block mt-3 px-3 py-1 bg-ginni-gold-600 text-xs rounded-full">
+                    <span className="inline-block mt-3 px-3 py-1 bg-amber-600 text-xs rounded-full">
                       {item.category}
                     </span>
                   </div>
@@ -150,7 +150,7 @@ const PortfolioSection = () => {
                 element.scrollIntoView({ behavior: "smooth" });
               }
             }}
-            className="bg-ginni-gold-600 hover:bg-ginni-gold-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-300"
+            className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-300"
           >
             Discuss Your Project
           </button>

@@ -42,10 +42,10 @@ const ServicesSection = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-ginni-grey-900 mb-6 font-[family-name:var(--font-playfair)]">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 font-[family-name:var(--font-playfair)]">
             Our Services
           </h2>
-          <p className="text-xl text-ginni-grey-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             We offer comprehensive interior design solutions tailored to your unique needs and vision.
           </p>
         </motion.div>
@@ -61,25 +61,25 @@ const ServicesSection = () => {
               whileHover={{ y: -5 }}
               className="h-full"
             >
-              <Card className="h-full hover:shadow-xl transition-shadow duration-300 border-ginni-beige-200">
+              <Card className="h-full hover:shadow-xl transition-shadow duration-300 border-gray-200">
                 <CardHeader>
-                  <div className="w-16 h-16 bg-ginni-gold-100 rounded-lg flex items-center justify-center mb-4">
-                    <service.icon className="w-8 h-8 text-ginni-gold-600" />
+                  <div className="w-16 h-16 bg-amber-100 rounded-lg flex items-center justify-center mb-4">
+                    <service.icon className="w-8 h-8 text-amber-600" />
                   </div>
-                  <CardTitle className="text-xl font-semibold text-ginni-grey-900">
+                  <CardTitle className="text-xl font-semibold text-gray-900">
                     {service.title}
                   </CardTitle>
-                  <CardDescription className="text-ginni-grey-600 leading-relaxed">
+                  <CardDescription className="text-gray-600 leading-relaxed">
                     {service.description}
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-2">
-                    <h4 className="font-medium text-ginni-grey-900 mb-3">Key Features:</h4>
+                    <h4 className="font-medium text-gray-900 mb-3">Key Features:</h4>
                     <ul className="space-y-1">
                       {service.features.map((feature, featureIndex) => (
-                        <li key={featureIndex} className="flex items-center text-sm text-ginni-grey-600">
-                          <div className="w-2 h-2 bg-ginni-gold-400 rounded-full mr-3"></div>
+                        <li key={featureIndex} className="flex items-center text-sm text-gray-600">
+                          <div className="w-2 h-2 bg-amber-400 rounded-full mr-3"></div>
                           {feature}
                         </li>
                       ))}
@@ -98,7 +98,7 @@ const ServicesSection = () => {
           viewport={{ once: true }}
           className="text-center mt-12"
         >
-          <p className="text-ginni-grey-600 mb-6">
+          <p className="text-gray-600 mb-6">
             Ready to transform your space? Let's discuss your project.
           </p>
           <button
@@ -108,7 +108,7 @@ const ServicesSection = () => {
                 element.scrollIntoView({ behavior: "smooth" });
               }
             }}
-            className="bg-ginni-gold-600 hover:bg-ginni-gold-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-300"
+            className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-300"
           >
             Start Your Project
           </button>

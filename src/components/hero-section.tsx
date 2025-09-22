@@ -5,12 +5,55 @@ import { Button } from "./ui/button";
 
 const HeroSection = () => {
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-white via-gray-50 to-amber-50">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute inset-0" style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23d97706' fill-opacity='0.1'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
-        }}></div>
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-50 via-amber-50 to-orange-100">
+      {/* Animated Background Elements */}
+      <div className="absolute inset-0">
+        {/* Floating geometric shapes */}
+        <motion.div
+          animate={{
+            y: [0, -20, 0],
+            rotate: [0, 5, 0],
+          }}
+          transition={{
+            duration: 6,
+            repeat: Infinity,
+            ease: "easeInOut"
+          }}
+          className="absolute top-20 left-10 w-20 h-20 bg-gradient-to-br from-amber-200 to-orange-300 rounded-full opacity-20"
+        />
+        <motion.div
+          animate={{
+            y: [0, 15, 0],
+            rotate: [0, -5, 0],
+          }}
+          transition={{
+            duration: 8,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: 1
+          }}
+          className="absolute top-40 right-20 w-16 h-16 bg-gradient-to-br from-orange-200 to-red-300 rounded-lg opacity-20"
+        />
+        <motion.div
+          animate={{
+            y: [0, -10, 0],
+            x: [0, 10, 0],
+          }}
+          transition={{
+            duration: 7,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: 2
+          }}
+          className="absolute bottom-40 left-20 w-12 h-12 bg-gradient-to-br from-yellow-200 to-amber-300 rounded-full opacity-20"
+        />
+        
+        {/* Subtle pattern overlay */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute inset-0" style={{
+            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23d97706' fill-opacity='0.3'%3E%3Ccircle cx='30' cy='30' r='1.5'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
+          }}></div>
+        </div>
       </div>
 
       {/* Content */}
@@ -37,7 +80,7 @@ const HeroSection = () => {
         >
           <Button
             size="lg"
-            className="bg-ginni-gold-600 hover:bg-ginni-gold-700 text-white px-8 py-3 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
+            className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-3 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
             onClick={() => {
               const element = document.querySelector("#contact");
               if (element) {
@@ -50,7 +93,7 @@ const HeroSection = () => {
           <Button
             variant="outline"
             size="lg"
-            className="border-ginni-gold-600 text-ginni-gold-700 hover:bg-ginni-gold-50 px-8 py-3 text-lg font-semibold"
+            className="border-amber-600 text-amber-700 hover:bg-amber-50 px-8 py-3 text-lg font-semibold"
             onClick={() => {
               const element = document.querySelector("#portfolio");
               if (element) {
@@ -71,8 +114,8 @@ const HeroSection = () => {
         className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
       >
         <div className="animate-bounce">
-          <div className="w-6 h-10 border-2 border-ginni-gold-400 rounded-full flex justify-center">
-            <div className="w-1 h-3 bg-ginni-gold-400 rounded-full mt-2 animate-pulse"></div>
+          <div className="w-6 h-10 border-2 border-amber-400 rounded-full flex justify-center">
+            <div className="w-1 h-3 bg-amber-400 rounded-full mt-2 animate-pulse"></div>
           </div>
         </div>
       </motion.div>

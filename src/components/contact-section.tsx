@@ -70,7 +70,7 @@ const ContactSection = () => {
   ];
 
   return (
-    <section id="contact" className="py-20 bg-ginni-beige-50">
+    <section id="contact" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -79,10 +79,10 @@ const ContactSection = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-ginni-grey-900 mb-6 font-[family-name:var(--font-playfair)]">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 font-[family-name:var(--font-playfair)]">
             Get In Touch
           </h2>
-          <p className="text-xl text-ginni-grey-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Ready to transform your space? Let's discuss your project and bring your vision to life.
           </p>
         </motion.div>
@@ -95,9 +95,9 @@ const ContactSection = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <Card className="shadow-xl border-ginni-beige-200">
+            <Card className="shadow-xl border-gray-200">
               <CardHeader>
-                <CardTitle className="text-2xl font-semibold text-ginni-grey-900">
+                <CardTitle className="text-2xl font-semibold text-gray-900">
                   Send Us a Message
                 </CardTitle>
               </CardHeader>
@@ -105,7 +105,7 @@ const ContactSection = () => {
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
-                      <label htmlFor="name" className="block text-sm font-medium text-ginni-grey-700 mb-2">
+                      <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
                         Full Name *
                       </label>
                       <Input
@@ -115,12 +115,12 @@ const ContactSection = () => {
                         required
                         value={formData.name}
                         onChange={handleChange}
-                        className="border-ginni-beige-300 focus:border-ginni-gold-500 focus:ring-ginni-gold-500"
+                        className="border-gray-300 focus:border-amber-500 focus:ring-amber-500"
                         placeholder="Your full name"
                       />
                     </div>
                     <div>
-                      <label htmlFor="email" className="block text-sm font-medium text-ginni-grey-700 mb-2">
+                      <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
                         Email Address *
                       </label>
                       <Input
@@ -130,16 +130,16 @@ const ContactSection = () => {
                         required
                         value={formData.email}
                         onChange={handleChange}
-                        className="border-ginni-beige-300 focus:border-ginni-gold-500 focus:ring-ginni-gold-500"
+                        className="border-gray-300 focus:border-amber-500 focus:ring-amber-500"
                         placeholder="your.email@example.com"
                       />
                     </div>
                   </div>
 
                   <div>
-                    <label htmlFor="phone" className="block text-sm font-medium text-ginni-grey-700 mb-2">
-                      Phone Number
-                    </label>
+                      <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
+                        Phone Number
+                      </label>
                     <Input
                       id="phone"
                       name="phone"
@@ -152,16 +152,16 @@ const ContactSection = () => {
                   </div>
 
                   <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-ginni-grey-700 mb-2">
-                      Message *
-                    </label>
+                      <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
+                        Message *
+                      </label>
                     <Textarea
                       id="message"
                       name="message"
                       required
                       value={formData.message}
                       onChange={handleChange}
-                      className="border-ginni-beige-300 focus:border-ginni-gold-500 focus:ring-ginni-gold-500 min-h-[120px]"
+                      className="border-gray-300 focus:border-amber-500 focus:ring-amber-500 min-h-[120px]"
                       placeholder="Tell us about your project, timeline, and any specific requirements..."
                     />
                   </div>
@@ -169,7 +169,7 @@ const ContactSection = () => {
                   <Button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full bg-ginni-gold-600 hover:bg-ginni-gold-700 text-white py-3 text-lg font-semibold"
+                    className="w-full bg-amber-600 hover:bg-amber-700 text-white py-3 text-lg font-semibold"
                   >
                     {isSubmitting ? "Sending..." : "Send Message"}
                   </Button>
@@ -187,10 +187,10 @@ const ContactSection = () => {
             className="space-y-6"
           >
             <div>
-              <h3 className="text-2xl font-semibold text-ginni-grey-900 mb-6 font-[family-name:var(--font-playfair)]">
+              <h3 className="text-2xl font-semibold text-gray-900 mb-6 font-[family-name:var(--font-playfair)]">
                 Contact Information
               </h3>
-              <p className="text-ginni-grey-600 mb-8">
+              <p className="text-gray-600 mb-8">
                 We're here to help you create the perfect space. Reach out to us through any of the following methods:
               </p>
             </div>
@@ -206,17 +206,17 @@ const ContactSection = () => {
                   className="bg-white p-6 rounded-lg shadow-md"
                 >
                   <div className="flex items-center mb-3">
-                    <div className="w-12 h-12 bg-ginni-gold-100 rounded-lg flex items-center justify-center mr-4">
-                      <info.icon className="w-6 h-6 text-ginni-gold-600" />
+                    <div className="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center mr-4">
+                      <info.icon className="w-6 h-6 text-amber-600" />
                     </div>
-                    <h4 className="text-lg font-semibold text-ginni-grey-900">
+                    <h4 className="text-lg font-semibold text-gray-900">
                       {info.title}
                     </h4>
                   </div>
-                  <p className="text-ginni-grey-900 font-medium mb-1">
+                  <p className="text-gray-900 font-medium mb-1">
                     {info.details}
                   </p>
-                  <p className="text-sm text-ginni-grey-600">
+                  <p className="text-sm text-gray-600">
                     {info.description}
                   </p>
                 </motion.div>
@@ -224,14 +224,14 @@ const ContactSection = () => {
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h4 className="text-lg font-semibold text-ginni-grey-900 mb-3">
+              <h4 className="text-lg font-semibold text-gray-900 mb-3">
                 Free Consultation
               </h4>
-              <p className="text-ginni-grey-600 mb-4">
+              <p className="text-gray-600 mb-4">
                 Schedule a complimentary 30-minute consultation to discuss your project and explore design possibilities.
               </p>
               <Button
-                className="bg-ginni-gold-600 hover:bg-ginni-gold-700 text-white"
+                className="bg-amber-600 hover:bg-amber-700 text-white"
                 onClick={() => {
                   const element = document.querySelector("#contact");
                   if (element) {
