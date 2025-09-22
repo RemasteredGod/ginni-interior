@@ -23,8 +23,35 @@ const AboutSection = () => {
   ];
 
   return (
-    <section id="about" className="py-20 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="about" className="py-20 bg-gradient-to-br from-gray-50 via-amber-50 to-orange-50 relative overflow-hidden">
+      {/* Background decorative elements */}
+      <div className="absolute inset-0">
+        <motion.div
+          animate={{
+            rotate: [0, 360],
+            scale: [1, 1.1, 1],
+          }}
+          transition={{
+            duration: 20,
+            repeat: Infinity,
+            ease: "linear"
+          }}
+          className="absolute top-10 right-10 w-32 h-32 bg-gradient-to-br from-amber-200 to-orange-300 rounded-full opacity-10"
+        />
+        <motion.div
+          animate={{
+            rotate: [360, 0],
+            scale: [1, 0.8, 1],
+          }}
+          transition={{
+            duration: 15,
+            repeat: Infinity,
+            ease: "linear"
+          }}
+          className="absolute bottom-10 left-10 w-24 h-24 bg-gradient-to-br from-orange-200 to-red-300 rounded-full opacity-10"
+        />
+      </div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -72,7 +99,10 @@ const AboutSection = () => {
             viewport={{ once: true }}
             className="relative"
           >
-            <div className="bg-amber-50 rounded-lg p-8 shadow-lg">
+            <motion.div 
+              whileHover={{ scale: 1.02, y: -5 }}
+              className="bg-gradient-to-br from-amber-50 to-orange-100 rounded-lg p-8 shadow-lg border border-amber-200"
+            >
               <h4 className="text-2xl font-semibold text-gray-900 mb-4 font-[family-name:var(--font-playfair)]">
                 Our Mission
               </h4>
@@ -81,7 +111,7 @@ const AboutSection = () => {
                 with their environment. We believe that great design has the power to improve
                 quality of life and create lasting value.
               </p>
-            </div>
+            </motion.div>
           </motion.div>
         </div>
 
@@ -105,9 +135,12 @@ const AboutSection = () => {
                 viewport={{ once: true }}
                 className="text-center"
               >
-                <div className="bg-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 shadow-lg">
+                <motion.div 
+                  whileHover={{ scale: 1.1, rotate: 5 }}
+                  className="bg-gradient-to-br from-white to-amber-50 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 shadow-lg border border-amber-200"
+                >
                   <value.icon className="w-8 h-8 text-amber-600" />
-                </div>
+                </motion.div>
                 <h4 className="text-xl font-semibold text-gray-900 mb-3">
                   {value.title}
                 </h4>

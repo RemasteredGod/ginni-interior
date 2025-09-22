@@ -64,12 +64,22 @@ const HeroSection = () => {
           transition={{ duration: 0.8 }}
           className="mb-8"
         >
-          <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 font-[family-name:var(--font-playfair)]">
+          <motion.h1 
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1, delay: 0.2 }}
+            className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-gray-900 via-amber-800 to-orange-700 bg-clip-text text-transparent mb-6 font-[family-name:var(--font-playfair)]"
+          >
             Ginni Interior
-          </h1>
-          <p className="text-xl md:text-2xl text-gray-700 mb-8 max-w-3xl mx-auto leading-relaxed">
+          </motion.h1>
+          <motion.p 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.5 }}
+            className="text-xl md:text-2xl text-gray-700 mb-8 max-w-3xl mx-auto leading-relaxed"
+          >
             Transforming spaces with modern elegance
-          </p>
+          </motion.p>
         </motion.div>
 
         <motion.div
@@ -78,31 +88,41 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.3 }}
           className="flex flex-col sm:flex-row gap-4 justify-center items-center"
         >
-          <Button
-            size="lg"
-            className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-3 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
-            onClick={() => {
-              const element = document.querySelector("#contact");
-              if (element) {
-                element.scrollIntoView({ behavior: "smooth" });
-              }
-            }}
+          <motion.div
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
           >
-            Get Started
-          </Button>
-          <Button
-            variant="outline"
-            size="lg"
-            className="border-amber-600 text-amber-700 hover:bg-amber-50 px-8 py-3 text-lg font-semibold"
-            onClick={() => {
-              const element = document.querySelector("#portfolio");
-              if (element) {
-                element.scrollIntoView({ behavior: "smooth" });
-              }
-            }}
+            <Button
+              size="lg"
+              className="bg-gradient-to-r from-amber-600 to-orange-600 hover:from-amber-700 hover:to-orange-700 text-white px-8 py-3 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
+              onClick={() => {
+                const element = document.querySelector("#contact");
+                if (element) {
+                  element.scrollIntoView({ behavior: "smooth" });
+                }
+              }}
+            >
+              Get Started
+            </Button>
+          </motion.div>
+          <motion.div
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
           >
-            View Our Work
-          </Button>
+            <Button
+              variant="outline"
+              size="lg"
+              className="border-2 border-amber-600 text-amber-700 hover:bg-gradient-to-r hover:from-amber-50 hover:to-orange-50 px-8 py-3 text-lg font-semibold backdrop-blur-sm"
+              onClick={() => {
+                const element = document.querySelector("#portfolio");
+                if (element) {
+                  element.scrollIntoView({ behavior: "smooth" });
+                }
+              }}
+            >
+              View Our Work
+            </Button>
+          </motion.div>
         </motion.div>
       </div>
 
@@ -113,11 +133,18 @@ const HeroSection = () => {
         transition={{ duration: 1, delay: 1 }}
         className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
       >
-        <div className="animate-bounce">
-          <div className="w-6 h-10 border-2 border-amber-400 rounded-full flex justify-center">
-            <div className="w-1 h-3 bg-amber-400 rounded-full mt-2 animate-pulse"></div>
+        <motion.div
+          animate={{ y: [0, 10, 0] }}
+          transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+        >
+          <div className="w-6 h-10 border-2 border-amber-400 rounded-full flex justify-center bg-gradient-to-b from-amber-100 to-transparent">
+            <motion.div 
+              animate={{ y: [0, 12, 0] }}
+              transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+              className="w-1 h-3 bg-gradient-to-b from-amber-500 to-orange-500 rounded-full mt-2"
+            ></motion.div>
           </div>
-        </div>
+        </motion.div>
       </motion.div>
     </section>
   );

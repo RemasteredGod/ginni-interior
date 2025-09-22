@@ -33,7 +33,35 @@ const ServicesSection = () => {
   ];
 
   return (
-    <section id="services" className="py-20 bg-white">
+    <section id="services" className="py-20 bg-gradient-to-br from-white via-amber-50 to-orange-50 relative overflow-hidden">
+      {/* Background decorative elements */}
+      <div className="absolute inset-0">
+        <motion.div
+          animate={{
+            x: [0, 100, 0],
+            y: [0, -50, 0],
+          }}
+          transition={{
+            duration: 12,
+            repeat: Infinity,
+            ease: "easeInOut"
+          }}
+          className="absolute top-20 left-20 w-40 h-40 bg-gradient-to-br from-amber-200 to-orange-300 rounded-full opacity-5"
+        />
+        <motion.div
+          animate={{
+            x: [0, -80, 0],
+            y: [0, 60, 0],
+          }}
+          transition={{
+            duration: 15,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: 2
+          }}
+          className="absolute bottom-20 right-20 w-32 h-32 bg-gradient-to-br from-orange-200 to-red-300 rounded-full opacity-5"
+        />
+      </div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
