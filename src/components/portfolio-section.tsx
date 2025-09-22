@@ -1,0 +1,163 @@
+"use client";
+
+import { motion } from "framer-motion";
+import { useState } from "react";
+import Image from "next/image";
+
+// Sample portfolio images (using placeholder images for now)
+const portfolioItems = [
+  {
+    id: 1,
+    title: "Modern Living Room",
+    category: "Residential",
+    image: "data:image/svg+xml,%3Csvg width='400' height='300' viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='400' height='300' fill='%23f3f4f6'/%3E%3Ctext x='200' y='150' font-family='Arial' font-size='18' text-anchor='middle' fill='%236b7280'%3EModern Living Room%3C/text%3E%3C/svg%3E",
+    description: "A contemporary living space featuring clean lines and natural materials."
+  },
+  {
+    id: 2,
+    title: "Luxury Kitchen",
+    category: "Residential",
+    image: "data:image/svg+xml,%3Csvg width='400' height='300' viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='400' height='300' fill='%23f9f0d4'/%3E%3Ctext x='200' y='150' font-family='Arial' font-size='18' text-anchor='middle' fill='%23c57b25'%3ELuxury Kitchen%3C/text%3E%3C/svg%3E",
+    description: "High-end kitchen design with premium appliances and custom cabinetry."
+  },
+  {
+    id: 3,
+    title: "Office Workspace",
+    category: "Commercial",
+    image: "data:image/svg+xml,%3Csvg width='400' height='300' viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='400' height='300' fill='%23e5e7eb'/%3E%3Ctext x='200' y='150' font-family='Arial' font-size='18' text-anchor='middle' fill='%23374151'%3EOffice Workspace%3C/text%3E%3C/svg%3E",
+    description: "Modern office design promoting productivity and collaboration."
+  },
+  {
+    id: 4,
+    title: "Master Bedroom",
+    category: "Residential",
+    image: "data:image/svg+xml,%3Csvg width='400' height='300' viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='400' height='300' fill='%23fef9ed'/%3E%3Ctext x='200' y='150' font-family='Arial' font-size='18' text-anchor='middle' fill='%23e19d2e'%3EMaster Bedroom%3C/text%3E%3C/svg%3E",
+    description: "Serene bedroom retreat with custom furnishings and soft lighting."
+  },
+  {
+    id: 5,
+    title: "Retail Space",
+    category: "Commercial",
+    image: "data:image/svg+xml,%3Csvg width='400' height='300' viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='400' height='300' fill='%23f3e6b8'/%3E%3Ctext x='200' y='150' font-family='Arial' font-size='18' text-anchor='middle' fill='%23bb8d4f'%3ERetail Space%3C/text%3E%3C/svg%3E",
+    description: "Contemporary retail environment designed to enhance customer experience."
+  },
+  {
+    id: 6,
+    title: "Bathroom Renovation",
+    category: "Residential",
+    image: "data:image/svg+xml,%3Csvg width='400' height='300' viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='400' height='300' fill='%23d1d5db'/%3E%3Ctext x='200' y='150' font-family='Arial' font-size='18' text-anchor='middle' fill='%234b5563'%3EBathroom Renovation%3C/text%3E%3C/svg%3E",
+    description: "Luxurious bathroom featuring modern fixtures and spa-like amenities."
+  }
+];
+
+const categories = ["All", "Residential", "Commercial"];
+
+const PortfolioSection = () => {
+  const [activeCategory, setActiveCategory] = useState("All");
+
+  const filteredItems = activeCategory === "All"
+    ? portfolioItems
+    : portfolioItems.filter(item => item.category === activeCategory);
+
+  return (
+    <section id="portfolio" className="py-20 bg-ginni-beige-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="text-center mb-16"
+        >
+          <h2 className="text-4xl md:text-5xl font-bold text-ginni-grey-900 mb-6 font-[family-name:var(--font-playfair)]">
+            Our Portfolio
+          </h2>
+          <p className="text-xl text-ginni-grey-600 max-w-3xl mx-auto leading-relaxed">
+            Explore our diverse collection of completed projects showcasing our design expertise.
+          </p>
+        </motion.div>
+
+        {/* Category Filter */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="flex justify-center mb-12"
+        >
+          <div className="flex space-x-2 bg-white rounded-lg p-1 shadow-sm">
+            {categories.map((category) => (
+              <button
+                key={category}
+                onClick={() => setActiveCategory(category)}
+                className={`px-6 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
+                  activeCategory === category
+                    ? "bg-ginni-gold-600 text-white"
+                    : "text-ginni-grey-600 hover:text-ginni-gold-600"
+                }`}
+              >
+                {category}
+              </button>
+            ))}
+          </div>
+        </motion.div>
+
+        {/* Portfolio Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {filteredItems.map((item, index) => (
+            <motion.div
+              key={item.id}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: index * 0.1 }}
+              viewport={{ once: true }}
+              whileHover={{ y: -10 }}
+              className="group cursor-pointer"
+            >
+              <div className="relative overflow-hidden rounded-lg shadow-lg bg-white">
+                <div className="aspect-[4/3] relative">
+                  <Image
+                    src={item.image}
+                    alt={item.title}
+                    fill
+                    className="object-cover transition-transform duration-300 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                    <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
+                    <p className="text-sm opacity-90">{item.description}</p>
+                    <span className="inline-block mt-3 px-3 py-1 bg-ginni-gold-600 text-xs rounded-full">
+                      {item.category}
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="text-center mt-12"
+        >
+          <button
+            onClick={() => {
+              const element = document.querySelector("#contact");
+              if (element) {
+                element.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
+            className="bg-ginni-gold-600 hover:bg-ginni-gold-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-300"
+          >
+            Discuss Your Project
+          </button>
+        </motion.div>
+      </div>
+    </section>
+  );
+};
+
+export default PortfolioSection;
