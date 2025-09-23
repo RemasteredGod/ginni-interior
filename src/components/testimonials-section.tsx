@@ -80,8 +80,36 @@ const TestimonialsSection = () => {
   const currentTestimonial = testimonials[currentIndex];
 
   return (
-    <section id="testimonials" className="py-20 bg-white">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="testimonials" className="py-20 bg-gradient-to-br from-white via-amber-50 to-orange-50 relative overflow-hidden">
+      {/* Background decorative elements */}
+      <div className="absolute inset-0">
+        <motion.div
+          animate={{
+            y: [0, -30, 0],
+            rotate: [0, 10, 0],
+          }}
+          transition={{
+            duration: 10,
+            repeat: Infinity,
+            ease: "easeInOut"
+          }}
+          className="absolute top-40 left-40 w-28 h-28 bg-gradient-to-br from-amber-200 to-orange-300 rounded-full opacity-5"
+        />
+        <motion.div
+          animate={{
+            y: [0, 25, 0],
+            rotate: [0, -8, 0],
+          }}
+          transition={{
+            duration: 12,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: 2
+          }}
+          className="absolute bottom-40 right-40 w-24 h-24 bg-gradient-to-br from-orange-200 to-red-300 rounded-full opacity-5"
+        />
+      </div>
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -107,15 +135,18 @@ const TestimonialsSection = () => {
             transition={{ duration: 0.5 }}
             className="mb-8"
           >
-            <Card className="max-w-4xl mx-auto shadow-xl border-gray-200">
+            <Card className="max-w-4xl mx-auto shadow-xl border-gray-200 bg-gradient-to-br from-white to-amber-50/30">
               <CardContent className="p-8 md:p-12">
                 <div className="flex flex-col md:flex-row items-center md:items-start gap-6">
                   <div className="flex-shrink-0">
-                    <div className="w-20 h-20 bg-amber-100 rounded-full flex items-center justify-center">
+                    <motion.div 
+                      whileHover={{ scale: 1.1 }}
+                      className="w-20 h-20 bg-gradient-to-br from-amber-100 to-orange-200 rounded-full flex items-center justify-center shadow-md"
+                    >
                       <span className="text-2xl font-bold text-amber-700">
                         {currentTestimonial.name.charAt(0)}
                       </span>
-                    </div>
+                    </motion.div>
                   </div>
                   <div className="flex-1 text-center md:text-left">
                     <div className="flex items-center justify-center md:justify-start mb-4">

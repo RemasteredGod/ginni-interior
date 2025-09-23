@@ -60,8 +60,36 @@ const PortfolioSection = () => {
     : portfolioItems.filter(item => item.category === activeCategory);
 
   return (
-    <section id="portfolio" className="py-20 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="portfolio" className="py-20 bg-gradient-to-br from-gray-50 via-amber-50 to-orange-50 relative overflow-hidden">
+      {/* Background decorative elements */}
+      <div className="absolute inset-0">
+        <motion.div
+          animate={{
+            rotate: [0, 180, 360],
+            scale: [1, 1.2, 1],
+          }}
+          transition={{
+            duration: 18,
+            repeat: Infinity,
+            ease: "easeInOut"
+          }}
+          className="absolute top-32 right-32 w-24 h-24 bg-gradient-to-br from-amber-200 to-orange-300 rounded-full opacity-10"
+        />
+        <motion.div
+          animate={{
+            rotate: [360, 180, 0],
+            scale: [1, 0.8, 1],
+          }}
+          transition={{
+            duration: 14,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: 3
+          }}
+          className="absolute bottom-32 left-32 w-20 h-20 bg-gradient-to-br from-orange-200 to-red-300 rounded-full opacity-10"
+        />
+      </div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -114,7 +142,7 @@ const PortfolioSection = () => {
               whileHover={{ y: -10 }}
               className="group cursor-pointer"
             >
-              <div className="relative overflow-hidden rounded-lg shadow-lg bg-white">
+              <div className="relative overflow-hidden rounded-lg shadow-lg bg-gradient-to-br from-white to-amber-50/30 border border-amber-100">
                 <div className="aspect-[4/3] relative">
                   <Image
                     src={item.image}

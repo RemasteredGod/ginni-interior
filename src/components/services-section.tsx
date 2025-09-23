@@ -62,7 +62,7 @@ const ServicesSection = () => {
           className="absolute bottom-20 right-20 w-32 h-32 bg-gradient-to-br from-orange-200 to-red-300 rounded-full opacity-5"
         />
       </div>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -89,11 +89,14 @@ const ServicesSection = () => {
               whileHover={{ y: -5 }}
               className="h-full"
             >
-              <Card className="h-full hover:shadow-xl transition-shadow duration-300 border-gray-200">
+              <Card className="h-full hover:shadow-xl transition-all duration-300 border-gray-200 bg-gradient-to-br from-white to-amber-50/30">
                 <CardHeader>
-                  <div className="w-16 h-16 bg-amber-100 rounded-lg flex items-center justify-center mb-4">
+                  <motion.div 
+                    whileHover={{ scale: 1.1, rotate: 5 }}
+                    className="w-16 h-16 bg-gradient-to-br from-amber-100 to-orange-200 rounded-lg flex items-center justify-center mb-4 shadow-md"
+                  >
                     <service.icon className="w-8 h-8 text-amber-600" />
-                  </div>
+                  </motion.div>
                   <CardTitle className="text-xl font-semibold text-gray-900">
                     {service.title}
                   </CardTitle>

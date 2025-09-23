@@ -70,8 +70,38 @@ const ContactSection = () => {
   ];
 
   return (
-    <section id="contact" className="py-20 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="contact" className="py-20 bg-gradient-to-br from-gray-50 via-amber-50 to-orange-50 relative overflow-hidden">
+      {/* Background decorative elements */}
+      <div className="absolute inset-0">
+        <motion.div
+          animate={{
+            x: [0, 50, 0],
+            y: [0, -30, 0],
+            rotate: [0, 5, 0],
+          }}
+          transition={{
+            duration: 16,
+            repeat: Infinity,
+            ease: "easeInOut"
+          }}
+          className="absolute top-20 right-20 w-36 h-36 bg-gradient-to-br from-amber-200 to-orange-300 rounded-full opacity-5"
+        />
+        <motion.div
+          animate={{
+            x: [0, -40, 0],
+            y: [0, 40, 0],
+            rotate: [0, -5, 0],
+          }}
+          transition={{
+            duration: 14,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: 2
+          }}
+          className="absolute bottom-20 left-20 w-28 h-28 bg-gradient-to-br from-orange-200 to-red-300 rounded-full opacity-5"
+        />
+      </div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -95,7 +125,7 @@ const ContactSection = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <Card className="shadow-xl border-gray-200">
+            <Card className="shadow-xl border-gray-200 bg-gradient-to-br from-white to-amber-50/30">
               <CardHeader>
                 <CardTitle className="text-2xl font-semibold text-gray-900">
                   Send Us a Message
@@ -203,12 +233,15 @@ const ContactSection = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                   viewport={{ once: true }}
-                  className="bg-white p-6 rounded-lg shadow-md"
+                  className="bg-gradient-to-br from-white to-amber-50/30 p-6 rounded-lg shadow-md border border-amber-100"
                 >
                   <div className="flex items-center mb-3">
-                    <div className="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center mr-4">
+                    <motion.div 
+                      whileHover={{ scale: 1.1, rotate: 5 }}
+                      className="w-12 h-12 bg-gradient-to-br from-amber-100 to-orange-200 rounded-lg flex items-center justify-center mr-4 shadow-md"
+                    >
                       <info.icon className="w-6 h-6 text-amber-600" />
-                    </div>
+                    </motion.div>
                     <h4 className="text-lg font-semibold text-gray-900">
                       {info.title}
                     </h4>
@@ -223,7 +256,7 @@ const ContactSection = () => {
               ))}
             </div>
 
-            <div className="bg-white p-6 rounded-lg shadow-md">
+            <div className="bg-gradient-to-br from-white to-amber-50/30 p-6 rounded-lg shadow-md border border-amber-100">
               <h4 className="text-lg font-semibold text-gray-900 mb-3">
                 Free Consultation
               </h4>
