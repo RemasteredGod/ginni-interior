@@ -48,19 +48,19 @@ const ContactSection = () => {
     {
       icon: Phone,
       title: 'Phone',
-      details: '+1 (555) 123-4567',
+      details: '+91 9026353342 / +91 9140913824',
       description: 'Call us for immediate assistance',
     },
     {
       icon: Mail,
       title: 'Email',
-      details: 'info@ginninterior.com',
+      details: 'abhaysharmaginnni@gmail.com',
       description: 'Send us your project details',
     },
     {
       icon: MapPin,
       title: 'Address',
-      details: '123 Design Street, New York, NY 10001',
+      details: '202-F, Harjinder Nagar, Ramadevi, Kanpur',
       description: 'Visit our design studio',
     },
     {
@@ -118,8 +118,8 @@ const ContactSection = () => {
             Get In Touch
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Ready to transform your space? Let&apos;s discuss your project and
-            bring your vision to life.
+            Ready to transform your space? At Ginni Interiors - A Living Solutions, where style meets comfort, 
+            we create stylish and comfortable living spaces tailored to your needs.
           </p>
         </motion.div>
 
@@ -191,8 +191,8 @@ const ContactSection = () => {
                       type="tel"
                       value={formData.phone}
                       onChange={handleChange}
-                      className="border-ginni-beige-300 focus:border-ginni-gold-500 focus:ring-ginni-gold-500"
-                      placeholder="+1 (555) 123-4567"
+                      className="border-gray-300 focus:border-amber-500 focus:ring-amber-500"
+                      placeholder="+91 9026353342"
                     />
                   </div>
 
@@ -239,8 +239,8 @@ const ContactSection = () => {
                 Contact Information
               </h3>
               <p className="text-gray-600 mb-8">
-                We&apos;re here to help you create the perfect space. Reach out
-                to us through any of the following methods:
+                From complete construction work to modern interiors, our expert team ensures every project 
+                reflects your personality and lifestyle. Reach out to us through any of the following methods:
               </p>
             </div>
 
@@ -278,8 +278,8 @@ const ContactSection = () => {
                 Free Consultation
               </h4>
               <p className="text-gray-600 mb-4">
-                Schedule a complimentary 30-minute consultation to discuss your
-                project and explore design possibilities.
+                Schedule a complimentary consultation to discuss your project and explore design possibilities.
+                We provide customized solutions for every budget with high-quality materials.
               </p>
               <Button
                 className="bg-amber-600 hover:bg-amber-700 text-white"
