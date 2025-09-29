@@ -102,7 +102,7 @@ const ContactSection = () => {
         />
       </div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <motion.div
+        <motion.div 
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -113,7 +113,7 @@ const ContactSection = () => {
             Get In Touch
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Ready to transform your space? Let's discuss your project and bring your vision to life.
+            Ready to transform your space? Let&apos;s discuss your project and bring your vision to life.
           </p>
         </motion.div>
 
@@ -221,7 +221,7 @@ const ContactSection = () => {
                 Contact Information
               </h3>
               <p className="text-gray-600 mb-8">
-                We're here to help you create the perfect space. Reach out to us through any of the following methods:
+                We&apos;re here to help you create the perfect space. Reach out to us through any of the following methods:
               </p>
             </div>
 

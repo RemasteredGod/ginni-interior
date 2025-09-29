@@ -121,7 +121,7 @@ const TestimonialsSection = () => {
             What Our Clients Say
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Don't just take our word for it. Here's what our satisfied clients have to say about their experience.
+            Don&apos;t just take our word for it. Here&apos;s what our satisfied clients have to say about their experience.
           </p>
         </motion.div>
 
@@ -155,7 +155,7 @@ const TestimonialsSection = () => {
                       ))}
                     </div>
                     <blockquote className="text-lg text-gray-700 mb-6 italic leading-relaxed">
-                      "{currentTestimonial.content}"
+                      &ldquo;{currentTestimonial.content}&rdquo;
                     </blockquote>
                     <div>
                       <h4 className="text-xl font-semibold text-gray-900">
