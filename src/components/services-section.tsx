@@ -130,7 +130,7 @@ const ServicesSection = () => {
           className="text-center mt-12"
         >
           <p className="text-gray-600 mb-6">
-            Ready to transform your space? Let's discuss your project.
+            Ready to transform your space? Let&apos;s discuss your project.
           </p>
           <button
             onClick={() => {
