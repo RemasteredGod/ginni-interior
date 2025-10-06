@@ -1,66 +1,76 @@
-"use client";
+'use client';
 
-import { motion } from "framer-motion";
-import { useState } from "react";
-import Image from "next/image";
+import { motion } from 'framer-motion';
+import { useState } from 'react';
+import Image from 'next/image';
 
 // Portfolio images from public folder (1.jpeg .. 6.jpeg)
 const portfolioItems = [
   {
     id: 1,
-    title: "Modern Living Room",
-    category: "Residential",
-    image: "/1.jpeg",
-    description: "A contemporary living space featuring clean lines and natural materials."
+    title: 'Modern Living Room',
+    category: 'Residential',
+    image: '/1.jpeg',
+    description:
+      'A contemporary living space featuring clean lines and natural materials.',
   },
   {
     id: 2,
-    title: "Luxury Kitchen",
-    category: "Residential",
-    image: "/2.jpeg",
-    description: "High-end kitchen design with premium appliances and custom cabinetry."
+    title: 'Luxury Kitchen',
+    category: 'Residential',
+    image: '/2.jpeg',
+    description:
+      'High-end kitchen design with premium appliances and custom cabinetry.',
   },
   {
     id: 3,
-    title: "Office Workspace",
-    category: "Commercial",
-    image: "/3.jpeg",
-    description: "Modern office design promoting productivity and collaboration."
+    title: 'Office Workspace',
+    category: 'Commercial',
+    image: '/3.jpeg',
+    description:
+      'Modern office design promoting productivity and collaboration.',
   },
   {
     id: 4,
-    title: "Master Bedroom",
-    category: "Residential",
-    image: "/4.jpeg",
-    description: "Serene bedroom retreat with custom furnishings and soft lighting."
+    title: 'Master Bedroom',
+    category: 'Residential',
+    image: '/4.jpeg',
+    description:
+      'Serene bedroom retreat with custom furnishings and soft lighting.',
   },
   {
     id: 5,
-    title: "Retail Space",
-    category: "Commercial",
-    image: "/5.jpeg",
-    description: "Contemporary retail environment designed to enhance customer experience."
+    title: 'Retail Space',
+    category: 'Commercial',
+    image: '/5.jpeg',
+    description:
+      'Contemporary retail environment designed to enhance customer experience.',
   },
   {
     id: 6,
-    title: "Bathroom Renovation",
-    category: "Residential",
-    image: "/6.jpeg",
-    description: "Luxurious bathroom featuring modern fixtures and spa-like amenities."
-  }
+    title: 'Bathroom Renovation',
+    category: 'Residential',
+    image: '/6.jpeg',
+    description:
+      'Luxurious bathroom featuring modern fixtures and spa-like amenities.',
+  },
 ];
 
-const categories = ["All", "Residential", "Commercial"];
+const categories = ['All', 'Residential', 'Commercial'];
 
 const PortfolioSection = () => {
-  const [activeCategory, setActiveCategory] = useState("All");
+  const [activeCategory, setActiveCategory] = useState('All');
 
-  const filteredItems = activeCategory === "All"
-    ? portfolioItems
-    : portfolioItems.filter(item => item.category === activeCategory);
+  const filteredItems =
+    activeCategory === 'All'
+      ? portfolioItems
+      : portfolioItems.filter((item) => item.category === activeCategory);
 
   return (
-    <section id="portfolio" className="py-20 bg-gradient-to-br from-gray-50 via-amber-50 to-orange-50 relative overflow-hidden">
+    <section
+      id="portfolio"
+      className="py-20 bg-gradient-to-br from-gray-50 via-amber-50 to-orange-50 relative overflow-hidden"
+    >
       {/* Background decorative elements */}
       <div className="absolute inset-0">
         <motion.div
@@ -71,7 +81,7 @@ const PortfolioSection = () => {
           transition={{
             duration: 18,
             repeat: Infinity,
-            ease: "easeInOut"
+            ease: 'easeInOut',
           }}
           className="absolute top-32 right-32 w-24 h-24 bg-gradient-to-br from-amber-200 to-orange-300 rounded-full opacity-10"
         />
@@ -83,8 +93,8 @@ const PortfolioSection = () => {
           transition={{
             duration: 14,
             repeat: Infinity,
-            ease: "easeInOut",
-            delay: 3
+            ease: 'easeInOut',
+            delay: 3,
           }}
           className="absolute bottom-32 left-32 w-20 h-20 bg-gradient-to-br from-orange-200 to-red-300 rounded-full opacity-10"
         />
@@ -101,7 +111,8 @@ const PortfolioSection = () => {
             Our Portfolio
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Explore our diverse collection of completed projects showcasing our design expertise.
+            Explore our diverse collection of completed projects showcasing our
+            design expertise.
           </p>
         </motion.div>
 
@@ -120,8 +131,8 @@ const PortfolioSection = () => {
                 onClick={() => setActiveCategory(category)}
                 className={`px-6 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
                   activeCategory === category
-                    ? "bg-amber-600 text-white"
-                    : "text-gray-600 hover:text-amber-600"
+                    ? 'bg-amber-600 text-white'
+                    : 'text-gray-600 hover:text-amber-600'
                 }`}
               >
                 {category}
@@ -173,9 +184,9 @@ const PortfolioSection = () => {
         >
           <button
             onClick={() => {
-              const element = document.querySelector("#contact");
+              const element = document.querySelector('#contact');
               if (element) {
-                element.scrollIntoView({ behavior: "smooth" });
+                element.scrollIntoView({ behavior: 'smooth' });
               }
             }}
             className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-300"
