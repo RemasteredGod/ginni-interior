@@ -1,26 +1,35 @@
-import type { Metadata } from "next";
-import { Inter, Playfair_Display } from "next/font/google";
-import "./globals.css";
+import type { Metadata } from 'next';
+import { Inter, Playfair_Display } from 'next/font/google';
+import './globals.css';
 
 const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
+  variable: '--font-inter',
+  subsets: ['latin'],
 });
 
 const playfair = Playfair_Display({
-  variable: "--font-playfair",
-  subsets: ["latin"],
+  variable: '--font-playfair',
+  subsets: ['latin'],
 });
 
 export const metadata: Metadata = {
-  title: "Ginni Interior - Transforming Spaces with Modern Elegance",
-  description: "Premier interior design studio specializing in residential and commercial spaces. Experience luxury and sophistication with our expert design solutions.",
-  keywords: "interior design, home decor, luxury interiors, residential design, commercial design, renovation, 3D visualization",
-  authors: [{ name: "Ginni Interior" }],
+  title: 'Ginni Interior - Transforming Spaces with Modern Elegance',
+  description:
+    'Premier interior design studio specializing in residential and commercial spaces. Experience luxury and sophistication with our expert design solutions.',
+  keywords:
+    'interior design, home decor, luxury interiors, residential design, commercial design, renovation, 3D visualization',
+  authors: [{ name: 'Ginni Interior' }],
   openGraph: {
-    title: "Ginni Interior - Transforming Spaces with Modern Elegance",
-    description: "Premier interior design studio specializing in residential and commercial spaces.",
-    type: "website",
+    title: 'Ginni Interior - Transforming Spaces with Modern Elegance',
+    description:
+      'Premier interior design studio specializing in residential and commercial spaces.',
+    type: 'website',
+  },
+  icons: {
+    // Use the site logo as the favicon / app icon
+    icon: '/ginni-logo.svg',
+    apple: '/ginni-logo.svg',
+    shortcut: '/ginni-logo.svg',
   },
 };
 
@@ -31,9 +40,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${inter.variable} ${playfair.variable} antialiased`}
-      >
+      <body className={`${inter.variable} ${playfair.variable} antialiased`}>
         {children}
       </body>
     </html>

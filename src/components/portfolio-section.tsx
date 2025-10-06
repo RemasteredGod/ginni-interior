@@ -4,48 +4,48 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import Image from "next/image";
 
-// Sample portfolio images (using placeholder images for now)
+// Portfolio images from public folder (1.jpeg .. 6.jpeg)
 const portfolioItems = [
   {
     id: 1,
     title: "Modern Living Room",
     category: "Residential",
-    image: "data:image/svg+xml,%3Csvg width='400' height='300' viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='400' height='300' fill='%23f3f4f6'/%3E%3Ctext x='200' y='150' font-family='Arial' font-size='18' text-anchor='middle' fill='%236b7280'%3EModern Living Room%3C/text%3E%3C/svg%3E",
+    image: "/1.jpeg",
     description: "A contemporary living space featuring clean lines and natural materials."
   },
   {
     id: 2,
     title: "Luxury Kitchen",
     category: "Residential",
-    image: "data:image/svg+xml,%3Csvg width='400' height='300' viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='400' height='300' fill='%23f9f0d4'/%3E%3Ctext x='200' y='150' font-family='Arial' font-size='18' text-anchor='middle' fill='%23c57b25'%3ELuxury Kitchen%3C/text%3E%3C/svg%3E",
+    image: "/2.jpeg",
     description: "High-end kitchen design with premium appliances and custom cabinetry."
   },
   {
     id: 3,
     title: "Office Workspace",
     category: "Commercial",
-    image: "data:image/svg+xml,%3Csvg width='400' height='300' viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='400' height='300' fill='%23e5e7eb'/%3E%3Ctext x='200' y='150' font-family='Arial' font-size='18' text-anchor='middle' fill='%23374151'%3EOffice Workspace%3C/text%3E%3C/svg%3E",
+    image: "/3.jpeg",
     description: "Modern office design promoting productivity and collaboration."
   },
   {
     id: 4,
     title: "Master Bedroom",
     category: "Residential",
-    image: "data:image/svg+xml,%3Csvg width='400' height='300' viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='400' height='300' fill='%23fef9ed'/%3E%3Ctext x='200' y='150' font-family='Arial' font-size='18' text-anchor='middle' fill='%23e19d2e'%3EMaster Bedroom%3C/text%3E%3C/svg%3E",
+    image: "/4.jpeg",
     description: "Serene bedroom retreat with custom furnishings and soft lighting."
   },
   {
     id: 5,
     title: "Retail Space",
     category: "Commercial",
-    image: "data:image/svg+xml,%3Csvg width='400' height='300' viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='400' height='300' fill='%23f3e6b8'/%3E%3Ctext x='200' y='150' font-family='Arial' font-size='18' text-anchor='middle' fill='%23bb8d4f'%3ERetail Space%3C/text%3E%3C/svg%3E",
+    image: "/5.jpeg",
     description: "Contemporary retail environment designed to enhance customer experience."
   },
   {
     id: 6,
     title: "Bathroom Renovation",
     category: "Residential",
-    image: "data:image/svg+xml,%3Csvg width='400' height='300' viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='400' height='300' fill='%23d1d5db'/%3E%3Ctext x='200' y='150' font-family='Arial' font-size='18' text-anchor='middle' fill='%234b5563'%3EBathroom Renovation%3C/text%3E%3C/svg%3E",
+    image: "/6.jpeg",
     description: "Luxurious bathroom featuring modern fixtures and spa-like amenities."
   }
 ];
