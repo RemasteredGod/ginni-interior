@@ -1,18 +1,30 @@
-import { Instagram, Linkedin, Facebook } from "lucide-react";
-import Image from "next/image";
+import { Instagram, Linkedin, Facebook } from 'lucide-react';
+import Image from 'next/image';
 
 const Footer = () => {
   const socialLinks = [
-    { name: "Instagram", icon: Instagram, href: "https://instagram.com/ginniinterior" },
-    { name: "Pinterest", icon: Facebook, href: "https://pinterest.com/ginniinterior" },
-    { name: "LinkedIn", icon: Linkedin, href: "https://linkedin.com/company/ginniinterior" },
+    {
+      name: 'Instagram',
+      icon: Instagram,
+      href: 'https://instagram.com/ginniinterior',
+    },
+    {
+      name: 'Pinterest',
+      icon: Facebook,
+      href: 'https://pinterest.com/ginniinterior',
+    },
+    {
+      name: 'LinkedIn',
+      icon: Linkedin,
+      href: 'https://linkedin.com/company/ginniinterior',
+    },
   ];
 
   const quickLinks = [
-    { name: "About", href: "#about" },
-    { name: "Services", href: "#services" },
-    { name: "Portfolio", href: "#portfolio" },
-    { name: "Contact", href: "#contact" },
+    { name: 'About', href: '#about' },
+    { name: 'Services', href: '#services' },
+    { name: 'Portfolio', href: '#portfolio' },
+    { name: 'Contact', href: '#contact' },
   ];
 
   return (
@@ -34,8 +46,9 @@ const Footer = () => {
               </span>
             </div>
             <p className="text-gray-300 mb-6 max-w-md">
-              Transforming spaces with modern elegance. We create beautiful, functional interiors
-              that reflect your unique style and enhance your lifestyle.
+              Transforming spaces with modern elegance. We create beautiful,
+              functional interiors that reflect your unique style and enhance
+              your lifestyle.
             </p>
           </div>
 
@@ -60,9 +73,13 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact</h3>
             <div className="space-y-2 text-gray-300">
-              <p>Phone: +1 (555) 123-4567</p>
-              <p>Email: info@ginninterior.com</p>
-              <p>Address: 123 Design Street<br />New York, NY 10001</p>
+              <p>Phone: +91 9026353342</p>
+              <p>Email: abhaysharmaginnni@gmail.com</p>
+              <p>
+                Address: 202-F, Harjinder Nagar, Ramadevi, Kanpur
+                <br />
+                Uttar Pradesh, India
+              </p>
             </div>
           </div>
         </div>
