@@ -1,29 +1,35 @@
-"use client";
+'use client';
 
-import { motion } from "framer-motion";
-import { Award, Users, Heart } from "lucide-react";
+import { motion } from 'framer-motion';
+import { Award, Users, Heart } from 'lucide-react';
 
 const AboutSection = () => {
   const values = [
     {
       icon: Award,
-      title: "Excellence",
-      description: "We strive for perfection in every detail, ensuring exceptional quality in all our projects."
+      title: 'Excellence',
+      description:
+        'We strive for perfection in every detail, ensuring exceptional quality in all our projects.',
     },
     {
       icon: Users,
-      title: "Collaboration",
-      description: "We work closely with our clients to understand their vision and bring it to life."
+      title: 'Collaboration',
+      description:
+        'We work closely with our clients to understand their vision and bring it to life.',
     },
     {
       icon: Heart,
-      title: "Passion",
-      description: "Our love for design drives us to create spaces that inspire and delight."
-    }
+      title: 'Passion',
+      description:
+        'Our love for design drives us to create spaces that inspire and delight.',
+    },
   ];
 
   return (
-    <section id="about" className="py-20 bg-gradient-to-br from-gray-50 via-amber-50 to-orange-50 relative overflow-hidden">
+    <section
+      id="about"
+      className="py-20 bg-gradient-to-br from-gray-50 via-amber-50 to-orange-50 relative overflow-hidden"
+    >
       {/* Background decorative elements */}
       <div className="absolute inset-0">
         <motion.div
@@ -34,7 +40,7 @@ const AboutSection = () => {
           transition={{
             duration: 20,
             repeat: Infinity,
-            ease: "linear"
+            ease: 'linear',
           }}
           className="absolute top-10 right-10 w-32 h-32 bg-gradient-to-br from-amber-200 to-orange-300 rounded-full opacity-10"
         />
@@ -46,7 +52,7 @@ const AboutSection = () => {
           transition={{
             duration: 15,
             repeat: Infinity,
-            ease: "linear"
+            ease: 'linear',
           }}
           className="absolute bottom-10 left-10 w-24 h-24 bg-gradient-to-br from-orange-200 to-red-300 rounded-full opacity-10"
         />
@@ -63,9 +69,10 @@ const AboutSection = () => {
             About Ginni Interior - Lucknow&apos;s Premier Design Studio
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            With over a decade of experience in interior design, we are Lucknow&apos;s most trusted 
-            interior designers, creating sophisticated spaces that blend functionality with 
-            aesthetic beauty across Gomti Nagar, Hazratganj, Aliganj, and all of Lucknow.
+            With over a decade of experience in interior design, we are
+            Lucknow&apos;s most trusted interior designers, creating
+            sophisticated spaces that blend functionality with aesthetic beauty
+            across Gomti Nagar, Hazratganj, Aliganj, and all of Lucknow.
           </p>
         </motion.div>
 
@@ -81,22 +88,25 @@ const AboutSection = () => {
               Our Story - Lucknow&apos;s Trusted Interior Design Partner
             </h3>
             <p className="text-gray-600 leading-relaxed">
-              Founded in 2015, Ginni Interior began as a passion project to transform ordinary
-              spaces into extraordinary experiences right here in Lucknow. What started as a 
-              small design studio has grown into Lucknow&apos;s premier interior design firm, serving 
-              clients across residential and commercial sectors in Gomti Nagar, Hazratganj, 
-              Aliganj, Indira Nagar, and throughout Uttar Pradesh.
+              Founded in 2015, Ginni Interior began as a passion project to
+              transform ordinary spaces into extraordinary experiences right
+              here in Lucknow. What started as a small design studio has grown
+              into Lucknow&apos;s premier interior design firm, serving clients
+              across residential and commercial sectors in Gomti Nagar,
+              Hazratganj, Aliganj, Indira Nagar, and throughout Uttar Pradesh.
             </p>
             <p className="text-gray-600 leading-relaxed">
-              Our team of talented designers brings together diverse backgrounds in architecture,
-              fine arts, and interior design to create spaces that are not just beautiful, but
-              also functional and sustainable. We understand Lucknow&apos;s unique architectural 
-              heritage and blend modern design with traditional Awadhi aesthetics.
+              Our team of talented designers brings together diverse backgrounds
+              in architecture, fine arts, and interior design to create spaces
+              that are not just beautiful, but also functional and sustainable.
+              We understand Lucknow&apos;s unique architectural heritage and
+              blend modern design with traditional Awadhi aesthetics.
             </p>
             <p className="text-gray-600 leading-relaxed">
-              <strong>Why Choose Ginni Interior in Lucknow?</strong> We offer personalized consultations, 
-              affordable pricing, timely delivery, and the highest quality materials. Serving 500+ 
-              satisfied clients with 4.9★ rating makes us the best interior designer in Lucknow.
+              <strong>Why Choose Ginni Interior in Lucknow?</strong> We offer
+              personalized consultations, affordable pricing, timely delivery,
+              and the highest quality materials. Serving 500+ satisfied clients
+              with 4.9★ rating makes us the best interior designer in Lucknow.
             </p>
           </motion.div>
 
@@ -107,7 +117,7 @@ const AboutSection = () => {
             viewport={{ once: true }}
             className="relative"
           >
-            <motion.div 
+            <motion.div
               whileHover={{ scale: 1.02, y: -5 }}
               className="bg-gradient-to-br from-amber-50 to-orange-100 rounded-lg p-8 shadow-lg border border-amber-200"
             >
@@ -115,9 +125,10 @@ const AboutSection = () => {
                 Our Mission
               </h4>
               <p className="text-gray-600 leading-relaxed">
-                To create inspiring interiors that enhance the way people live, work, and interact
-                with their environment. We believe that great design has the power to improve
-                quality of life and create lasting value.
+                To create inspiring interiors that enhance the way people live,
+                work, and interact with their environment. We believe that great
+                design has the power to improve quality of life and create
+                lasting value.
               </p>
             </motion.div>
           </motion.div>
@@ -143,7 +154,7 @@ const AboutSection = () => {
                 viewport={{ once: true }}
                 className="text-center"
               >
-                <motion.div 
+                <motion.div
                   whileHover={{ scale: 1.1, rotate: 5 }}
                   className="bg-gradient-to-br from-white to-amber-50 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 shadow-lg border border-amber-200"
                 >
@@ -152,9 +163,7 @@ const AboutSection = () => {
                 <h4 className="text-xl font-semibold text-gray-900 mb-3">
                   {value.title}
                 </h4>
-                <p className="text-gray-600">
-                  {value.description}
-                </p>
+                <p className="text-gray-600">{value.description}</p>
               </motion.div>
             ))}
           </div>

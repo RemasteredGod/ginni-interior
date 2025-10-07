@@ -1,11 +1,14 @@
-"use client";
+'use client';
 
-import { motion } from "framer-motion";
-import { Button } from "./ui/button";
+import { motion } from 'framer-motion';
+import { Button } from './ui/button';
 
 const HeroSection = () => {
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-50 via-amber-50 to-orange-100">
+    <section
+      id="home"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-50 via-amber-50 to-orange-100"
+    >
       {/* Animated Background Elements */}
       <div className="absolute inset-0">
         {/* Floating geometric shapes */}
@@ -17,7 +20,7 @@ const HeroSection = () => {
           transition={{
             duration: 6,
             repeat: Infinity,
-            ease: "easeInOut"
+            ease: 'easeInOut',
           }}
           className="absolute top-20 left-10 w-20 h-20 bg-gradient-to-br from-amber-200 to-orange-300 rounded-full opacity-20"
         />
@@ -29,8 +32,8 @@ const HeroSection = () => {
           transition={{
             duration: 8,
             repeat: Infinity,
-            ease: "easeInOut",
-            delay: 1
+            ease: 'easeInOut',
+            delay: 1,
           }}
           className="absolute top-40 right-20 w-16 h-16 bg-gradient-to-br from-orange-200 to-red-300 rounded-lg opacity-20"
         />
@@ -42,17 +45,20 @@ const HeroSection = () => {
           transition={{
             duration: 7,
             repeat: Infinity,
-            ease: "easeInOut",
-            delay: 2
+            ease: 'easeInOut',
+            delay: 2,
           }}
           className="absolute bottom-40 left-20 w-12 h-12 bg-gradient-to-br from-yellow-200 to-amber-300 rounded-full opacity-20"
         />
-        
+
         {/* Subtle pattern overlay */}
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0" style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23d97706' fill-opacity='0.3'%3E%3Ccircle cx='30' cy='30' r='1.5'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
-          }}></div>
+          <div
+            className="absolute inset-0"
+            style={{
+              backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23d97706' fill-opacity='0.3'%3E%3Ccircle cx='30' cy='30' r='1.5'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+            }}
+          ></div>
         </div>
       </div>
 
@@ -64,7 +70,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8 }}
           className="mb-8"
         >
-          <motion.h1 
+          <motion.h1
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, delay: 0.2 }}
@@ -72,21 +78,23 @@ const HeroSection = () => {
           >
             Best Interior Designer in Lucknow
           </motion.h1>
-          <motion.p 
+          <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
             className="text-xl md:text-2xl text-gray-700 mb-4 max-w-3xl mx-auto leading-relaxed"
           >
-            Ginni Interior - Transforming Lucknow Homes & Offices with Modern Elegance
+            Ginni Interior - Transforming Lucknow Homes & Offices with Modern
+            Elegance
           </motion.p>
-          <motion.p 
+          <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
             className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto"
           >
-            Award-winning residential & commercial interior design | 10+ Years Experience | 500+ Happy Clients in Lucknow
+            Award-winning residential & commercial interior design | 10+ Years
+            Experience | 500+ Happy Clients in Lucknow
           </motion.p>
         </motion.div>
 
@@ -96,35 +104,29 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.3 }}
           className="flex flex-col sm:flex-row gap-4 justify-center items-center"
         >
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
+          <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
             <Button
               size="lg"
               className="bg-gradient-to-r from-amber-600 to-orange-600 hover:from-amber-700 hover:to-orange-700 text-white px-8 py-3 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
               onClick={() => {
-                const element = document.querySelector("#contact");
+                const element = document.querySelector('#contact');
                 if (element) {
-                  element.scrollIntoView({ behavior: "smooth" });
+                  element.scrollIntoView({ behavior: 'smooth' });
                 }
               }}
             >
               Get Started
             </Button>
           </motion.div>
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
+          <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
             <Button
               variant="outline"
               size="lg"
               className="border-2 border-amber-600 text-amber-700 hover:bg-gradient-to-r hover:from-amber-50 hover:to-orange-50 px-8 py-3 text-lg font-semibold backdrop-blur-sm"
               onClick={() => {
-                const element = document.querySelector("#portfolio");
+                const element = document.querySelector('#portfolio');
                 if (element) {
-                  element.scrollIntoView({ behavior: "smooth" });
+                  element.scrollIntoView({ behavior: 'smooth' });
                 }
               }}
             >
@@ -143,12 +145,12 @@ const HeroSection = () => {
       >
         <motion.div
           animate={{ y: [0, 10, 0] }}
-          transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+          transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
         >
           <div className="w-6 h-10 border-2 border-amber-400 rounded-full flex justify-center bg-gradient-to-b from-amber-100 to-transparent">
-            <motion.div 
+            <motion.div
               animate={{ y: [0, 12, 0] }}
-              transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+              transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
               className="w-1 h-3 bg-gradient-to-b from-amber-500 to-orange-500 rounded-full mt-2"
             ></motion.div>
           </div>

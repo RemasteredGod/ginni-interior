@@ -1,39 +1,72 @@
-"use client";
+'use client';
 
-import { motion } from "framer-motion";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card";
-import { Home, Building2, Wrench, Eye } from "lucide-react";
+import { motion } from 'framer-motion';
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from './ui/card';
+import { Home, Building2, Wrench, Eye } from 'lucide-react';
 
 const ServicesSection = () => {
   const services = [
     {
       icon: Home,
-      title: "Residential Interior Design Lucknow",
-      description: "Transform your Lucknow home into a personalized sanctuary with our comprehensive residential design services. From concept to completion, we create spaces that reflect your lifestyle across all areas of Lucknow.",
-      features: ["Modular Kitchen Design", "Bedroom & Living Room", "Space Planning & Vastu", "3D Visualization"]
+      title: 'Residential Interior Design Lucknow',
+      description:
+        'Transform your Lucknow home into a personalized sanctuary with our comprehensive residential design services. From concept to completion, we create spaces that reflect your lifestyle across all areas of Lucknow.',
+      features: [
+        'Modular Kitchen Design',
+        'Bedroom & Living Room',
+        'Space Planning & Vastu',
+        '3D Visualization',
+      ],
     },
     {
       icon: Building2,
-      title: "Commercial Interior Design Lucknow",
-      description: "Elevate your Lucknow business environment with professional commercial interior design. We create functional, inspiring workspaces that enhance productivity and brand identity for offices, retail, and restaurants.",
-      features: ["Office Interior Lucknow", "Retail & Restaurant Design", "Corporate Branding", "Ergonomic Workspaces"]
+      title: 'Commercial Interior Design Lucknow',
+      description:
+        'Elevate your Lucknow business environment with professional commercial interior design. We create functional, inspiring workspaces that enhance productivity and brand identity for offices, retail, and restaurants.',
+      features: [
+        'Office Interior Lucknow',
+        'Retail & Restaurant Design',
+        'Corporate Branding',
+        'Ergonomic Workspaces',
+      ],
     },
     {
       icon: Wrench,
-      title: "Home Renovation Services Lucknow",
-      description: "Breathe new life into existing Lucknow properties with our expert renovation services. We modernize and optimize your interiors while preserving architectural integrity and staying within budget.",
-      features: ["Complete Home Makeover", "Kitchen & Bathroom Remodel", "Flooring & False Ceiling", "Turnkey Solutions"]
+      title: 'Home Renovation Services Lucknow',
+      description:
+        'Breathe new life into existing Lucknow properties with our expert renovation services. We modernize and optimize your interiors while preserving architectural integrity and staying within budget.',
+      features: [
+        'Complete Home Makeover',
+        'Kitchen & Bathroom Remodel',
+        'Flooring & False Ceiling',
+        'Turnkey Solutions',
+      ],
     },
     {
       icon: Eye,
-      title: "3D Visualization & Virtual Tours",
-      description: "Experience your future Lucknow space before construction begins with our advanced 3D visualization services. Make informed decisions with photorealistic renderings and virtual walkthroughs.",
-      features: ["Photorealistic 3D Renders", "360° Virtual Tours", "Multiple Design Options", "Material Visualization"]
-    }
+      title: '3D Visualization & Virtual Tours',
+      description:
+        'Experience your future Lucknow space before construction begins with our advanced 3D visualization services. Make informed decisions with photorealistic renderings and virtual walkthroughs.',
+      features: [
+        'Photorealistic 3D Renders',
+        '360° Virtual Tours',
+        'Multiple Design Options',
+        'Material Visualization',
+      ],
+    },
   ];
 
   return (
-    <section id="services" className="py-20 bg-gradient-to-br from-white via-amber-50 to-orange-50 relative overflow-hidden">
+    <section
+      id="services"
+      className="py-20 bg-gradient-to-br from-white via-amber-50 to-orange-50 relative overflow-hidden"
+    >
       {/* Background decorative elements */}
       <div className="absolute inset-0">
         <motion.div
@@ -44,7 +77,7 @@ const ServicesSection = () => {
           transition={{
             duration: 12,
             repeat: Infinity,
-            ease: "easeInOut"
+            ease: 'easeInOut',
           }}
           className="absolute top-20 left-20 w-40 h-40 bg-gradient-to-br from-amber-200 to-orange-300 rounded-full opacity-5"
         />
@@ -56,8 +89,8 @@ const ServicesSection = () => {
           transition={{
             duration: 15,
             repeat: Infinity,
-            ease: "easeInOut",
-            delay: 2
+            ease: 'easeInOut',
+            delay: 2,
           }}
           className="absolute bottom-20 right-20 w-32 h-32 bg-gradient-to-br from-orange-200 to-red-300 rounded-full opacity-5"
         />
@@ -74,8 +107,9 @@ const ServicesSection = () => {
             Interior Design Services in Lucknow
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            We offer comprehensive interior design solutions tailored to Lucknow homes and businesses. 
-            From modern apartments to luxury villas, offices to retail spaces - we bring your vision to life.
+            We offer comprehensive interior design solutions tailored to Lucknow
+            homes and businesses. From modern apartments to luxury villas,
+            offices to retail spaces - we bring your vision to life.
           </p>
         </motion.div>
 
@@ -92,7 +126,7 @@ const ServicesSection = () => {
             >
               <Card className="h-full hover:shadow-xl transition-all duration-300 border-gray-200 bg-gradient-to-br from-white to-amber-50/30">
                 <CardHeader>
-                  <motion.div 
+                  <motion.div
                     whileHover={{ scale: 1.1, rotate: 5 }}
                     className="w-16 h-16 bg-gradient-to-br from-amber-100 to-orange-200 rounded-lg flex items-center justify-center mb-4 shadow-md"
                   >
@@ -107,10 +141,15 @@ const ServicesSection = () => {
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-2">
-                    <h4 className="font-medium text-gray-900 mb-3">Key Features:</h4>
+                    <h4 className="font-medium text-gray-900 mb-3">
+                      Key Features:
+                    </h4>
                     <ul className="space-y-1">
                       {service.features.map((feature, featureIndex) => (
-                        <li key={featureIndex} className="flex items-center text-sm text-gray-600">
+                        <li
+                          key={featureIndex}
+                          className="flex items-center text-sm text-gray-600"
+                        >
                           <div className="w-2 h-2 bg-amber-400 rounded-full mr-3"></div>
                           {feature}
                         </li>
@@ -135,9 +174,9 @@ const ServicesSection = () => {
           </p>
           <button
             onClick={() => {
-              const element = document.querySelector("#contact");
+              const element = document.querySelector('#contact');
               if (element) {
-                element.scrollIntoView({ behavior: "smooth" });
+                element.scrollIntoView({ behavior: 'smooth' });
               }
             }}
             className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-300"

@@ -15,8 +15,9 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   metadataBase: new URL('https://ginni-interior.com'),
   title: {
-    default: 'Ginni Interior - Best Interior Designer in Lucknow | Home & Office Interiors',
-    template: '%s | Ginni Interior Lucknow'
+    default:
+      'Ginni Interior - Best Interior Designer in Lucknow | Home & Office Interiors',
+    template: '%s | Ginni Interior Lucknow',
   },
   description:
     'Premier interior designer in Lucknow specializing in residential and commercial spaces. Transform your home, office, or villa with luxury interior design solutions in Lucknow. Award-winning designs, 3D visualization & expert consultation.',
@@ -38,7 +39,7 @@ export const metadata: Metadata = {
     'Ginni Interior Lucknow',
     'top interior designer in Lucknow',
     'residential interior Lucknow',
-    'interior decorator Lucknow'
+    'interior decorator Lucknow',
   ],
   authors: [{ name: 'Ginni Interior', url: 'https://ginni-interior.com' }],
   creator: 'Ginni Interior',
@@ -49,9 +50,10 @@ export const metadata: Metadata = {
     telephone: false,
   },
   openGraph: {
-    title: 'Ginni Interior - Best Interior Designer in Lucknow | Home & Office Interiors',
+    title:
+      'Ginni Interior - Best Interior Designer in Lucknow | Home & Office Interiors',
     description:
-      'Transform your space with Lucknow\'s leading interior designer. Specializing in residential & commercial interiors with 10+ years of experience. Get free consultation today!',
+      "Transform your space with Lucknow's leading interior designer. Specializing in residential & commercial interiors with 10+ years of experience. Get free consultation today!",
     url: 'https://ginni-interior.com',
     siteName: 'Ginni Interior',
     locale: 'en_IN',
@@ -68,7 +70,8 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Ginni Interior - Best Interior Designer in Lucknow',
-    description: 'Transform your space with Lucknow\'s leading interior designer. Residential & commercial design experts.',
+    description:
+      "Transform your space with Lucknow's leading interior designer. Residential & commercial design experts.",
     images: ['/ginni-logo.svg'],
     creator: '@ginniinterior',
   },
@@ -107,7 +110,8 @@ export default function RootLayout({
     '@id': 'https://ginni-interior.com',
     name: 'Ginni Interior',
     image: 'https://ginni-interior.com/ginni-logo.svg',
-    description: 'Premier interior designer in Lucknow specializing in residential and commercial spaces. Award-winning interior design solutions.',
+    description:
+      'Premier interior designer in Lucknow specializing in residential and commercial spaces. Award-winning interior design solutions.',
     url: 'https://ginni-interior.com',
     telephone: '+91-XXXXXXXXXX',
     priceRange: '$$',
@@ -127,7 +131,14 @@ export default function RootLayout({
     openingHoursSpecification: [
       {
         '@type': 'OpeningHoursSpecification',
-        dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+        dayOfWeek: [
+          'Monday',
+          'Tuesday',
+          'Wednesday',
+          'Thursday',
+          'Friday',
+          'Saturday',
+        ],
         opens: '09:00',
         closes: '18:00',
       },
@@ -156,7 +167,8 @@ export default function RootLayout({
           itemOffered: {
             '@type': 'Service',
             name: 'Residential Interior Design in Lucknow',
-            description: 'Complete home interior design including living rooms, bedrooms, kitchens, and more.',
+            description:
+              'Complete home interior design including living rooms, bedrooms, kitchens, and more.',
           },
         },
         {
@@ -164,7 +176,8 @@ export default function RootLayout({
           itemOffered: {
             '@type': 'Service',
             name: 'Commercial Interior Design in Lucknow',
-            description: 'Professional office and commercial space interior design solutions.',
+            description:
+              'Professional office and commercial space interior design solutions.',
           },
         },
         {
@@ -172,7 +185,8 @@ export default function RootLayout({
           itemOffered: {
             '@type': 'Service',
             name: '3D Visualization Services',
-            description: 'Photorealistic 3D rendering and virtual tours of your interior design.',
+            description:
+              'Photorealistic 3D rendering and virtual tours of your interior design.',
           },
         },
         {
@@ -180,7 +194,8 @@ export default function RootLayout({
           itemOffered: {
             '@type': 'Service',
             name: 'Interior Renovation in Lucknow',
-            description: 'Complete renovation services to modernize existing spaces.',
+            description:
+              'Complete renovation services to modernize existing spaces.',
           },
         },
       ],

@@ -13,7 +13,6 @@ const Footer = () => {
       icon: Facebook,
       href: 'https://www.facebook.com/profile.php?id=61580059183159',
     },
-    
   ];
 
   const quickLinks = [
@@ -52,14 +51,17 @@ const Footer = () => {
               </span>
             </div>
             <p className="text-gray-300 mb-6 max-w-md">
-              Lucknow&apos;s premier interior design studio. We create beautiful,
-              functional interiors that reflect your unique style. Serving residential 
-              and commercial clients across Lucknow with over 10 years of excellence.
+              Lucknow&apos;s premier interior design studio. We create
+              beautiful, functional interiors that reflect your unique style.
+              Serving residential and commercial clients across Lucknow with
+              over 10 years of excellence.
             </p>
             <div className="text-sm text-gray-400">
               <p className="font-semibold text-amber-400 mb-2">Keywords:</p>
-              <p>Interior Designer Lucknow • Home Interior • Office Design • 
-              Modular Kitchen • 3D Visualization • Renovation Services</p>
+              <p>
+                Interior Designer Lucknow • Home Interior • Office Design •
+                Modular Kitchen • 3D Visualization • Renovation Services
+              </p>
             </div>
           </div>
 
@@ -97,14 +99,22 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
             <div className="space-y-2 text-gray-300 text-sm">
-              <p><strong>Phone:</strong></p>
-              <p>+91 9026353342</p>
-              <p className="pt-2"><strong>Email:</strong></p>
-              <p>abhaysharmaginnni@gmail.com</p>
-              <p className="pt-2"><strong>Address:</strong></p>
               <p>
-                202-F, Harjinder Nagar, Ramadevi<br />
-                Kanpur, Uttar Pradesh<br />
+                <strong>Phone:</strong>
+              </p>
+              <p>+91 9026353342</p>
+              <p className="pt-2">
+                <strong>Email:</strong>
+              </p>
+              <p>abhaysharmaginnni@gmail.com</p>
+              <p className="pt-2">
+                <strong>Address:</strong>
+              </p>
+              <p>
+                202-F, Harjinder Nagar, Ramadevi
+                <br />
+                Kanpur, Uttar Pradesh
+                <br />
                 India
               </p>
               <p className="pt-2 text-amber-400 font-semibold">
