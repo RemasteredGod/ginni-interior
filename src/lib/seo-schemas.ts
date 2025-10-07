@@ -10,7 +10,7 @@ export const faqSchema = {
       name: 'Who is the best interior designer in Lucknow?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Ginni Interior is one of Lucknow\'s top-rated interior designers with 10+ years of experience, 500+ completed projects, and a 4.9-star rating. We specialize in residential and commercial interior design across Gomti Nagar, Hazratganj, Aliganj, and all of Lucknow.',
+        text: "Ginni Interior is one of Lucknow's top-rated interior designers with 10+ years of experience, 500+ completed projects, and a 4.9-star rating. We specialize in residential and commercial interior design across Gomti Nagar, Hazratganj, Aliganj, and all of Lucknow.",
       },
     },
     {
@@ -66,7 +66,7 @@ export const faqSchema = {
       name: 'What makes Ginni Interior different from other designers in Lucknow?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Ginni Interior stands out with: 10+ years of proven experience in Lucknow, 500+ successful projects with 4.9★ rating, Personalized designs tailored to your lifestyle, Transparent pricing with no hidden costs, On-time project delivery guarantee, Premium quality materials, Dedicated project manager, After-sales support, and Deep understanding of Lucknow\'s architectural heritage.',
+        text: "Ginni Interior stands out with: 10+ years of proven experience in Lucknow, 500+ successful projects with 4.9★ rating, Personalized designs tailored to your lifestyle, Transparent pricing with no hidden costs, On-time project delivery guarantee, Premium quality materials, Dedicated project manager, After-sales support, and Deep understanding of Lucknow's architectural heritage.",
       },
     },
   ],

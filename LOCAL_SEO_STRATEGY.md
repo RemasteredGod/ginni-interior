@@ -7,6 +7,7 @@
 ## 📍 Location-Specific Keywords to Use
 
 ### Primary Keywords (Use in H1, Title, First Paragraph):
+
 1. Interior designer in Lucknow
 2. Best interior designer Lucknow
 3. Interior design Lucknow
@@ -14,6 +15,7 @@
 5. Office interior Lucknow
 
 ### Secondary Keywords (Use in H2, H3, Throughout Content):
+
 6. Interior designer Gomti Nagar
 7. Interior designer Hazratganj
 8. Interior designer Aliganj
@@ -26,6 +28,7 @@
 15. Interior renovation Lucknow
 
 ### Long-tail Keywords (Use in Blog Posts):
+
 16. Best interior designer in Lucknow for small apartments
 17. Affordable interior designer in Gomti Nagar
 18. Top 10 interior designers in Lucknow
@@ -42,11 +45,13 @@
 ## 📝 Content Templates
 
 ### Blog Post Template 1: Location Guide
+
 **Title**: "Complete Guide to [Service] in [Lucknow Area]"
 
 **Example**: "Complete Guide to Modular Kitchen Design in Gomti Nagar"
 
 **Structure**:
+
 1. Introduction (mention Lucknow 2-3 times)
 2. Why [Area] is perfect for [Service]
 3. Cost breakdown for [Area]
@@ -56,6 +61,7 @@
 7. CTA: Contact Ginni Interior
 
 **SEO Tips**:
+
 - Use location in first 100 words
 - Include location in URL slug
 - Add location-specific images
@@ -64,11 +70,13 @@
 ---
 
 ### Blog Post Template 2: Service + Location
+
 **Title**: "Top 10 [Design Style] Interior Design Ideas for Lucknow [Room Type]"
 
 **Example**: "Top 10 Modern Bedroom Design Ideas for Lucknow Apartments"
 
 **Structure**:
+
 1. Hook with Lucknow context (climate, culture, etc.)
 2. Idea 1 - 10 (each with image)
 3. Why these work in Lucknow
@@ -81,9 +89,11 @@
 ---
 
 ### Blog Post Template 3: Comparison
+
 **Title**: "How to Choose the Best Interior Designer in Lucknow"
 
 **Structure**:
+
 1. Why Lucknow has unique design needs
 2. Factors to consider
 3. Questions to ask
@@ -100,24 +110,28 @@
 ### Areas to Highlight (Create content for each):
 
 1. **Gomti Nagar**
+
    - Upscale residential area
    - Modern luxury apartments
    - Content angle: Contemporary, luxury designs
    - Keywords: "interior designer Gomti Nagar", "luxury interior Gomti Nagar"
 
 2. **Hazratganj**
+
    - Commercial hub
    - Mix of old and new
    - Content angle: Commercial interiors, office design
    - Keywords: "office interior Hazratganj", "commercial design Lucknow"
 
 3. **Aliganj**
+
    - Family residential area
    - Mid-range apartments
    - Content angle: Family-friendly, functional design
    - Keywords: "home interior Aliganj", "affordable interior designer Lucknow"
 
 4. **Indira Nagar**
+
    - Established residential
    - Renovation opportunities
    - Content angle: Home renovation, modernization
@@ -130,6 +144,7 @@
    - Keywords: "new flat interior Jankipuram", "turnkey interior Lucknow"
 
 ### Content Ideas for Each Area:
+
 - "Best Interior Design Styles for [Area] Homes"
 - "Interior Design Cost Guide for [Area], Lucknow"
 - "Before & After: Home Transformation in [Area]"
@@ -141,6 +156,7 @@
 ## 📸 Image Optimization for Local SEO
 
 ### File Naming Convention:
+
 ```
 interior-design-lucknow-gomti-nagar-living-room.jpg
 modular-kitchen-design-lucknow-hazratganj.jpg
@@ -150,11 +166,13 @@ villa-interior-lucknow-2025.jpg
 ```
 
 ### Alt Text Format:
+
 ```
 [Service] in [Area], Lucknow by Ginni Interior - [Description]
 ```
 
 **Examples**:
+
 - "Modern living room interior design in Gomti Nagar, Lucknow by Ginni Interior - Contemporary style with neutral colors"
 - "Modular kitchen design in Hazratganj, Lucknow by Ginni Interior - L-shaped layout with island"
 - "Office interior design in Aliganj, Lucknow by Ginni Interior - Open workspace concept"
@@ -164,12 +182,14 @@ villa-interior-lucknow-2025.jpg
 ## 🏆 Competitor Analysis Keywords
 
 ### Monitor these competitors:
+
 1. [Research top 5 interior designers in Lucknow]
 2. Analyze their keyword strategy
 3. Find gap opportunities
 4. Target keywords they're missing
 
 ### Tools to Use:
+
 - Google "interior designer in Lucknow"
 - Check top 10 results
 - Use Ubersuggest/SEMrush to find their keywords
@@ -180,13 +200,15 @@ villa-interior-lucknow-2025.jpg
 ## 💬 Customer Review Templates
 
 ### Ask customers to mention:
+
 1. Specific service (modular kitchen, bedroom design, etc.)
 2. Location in Lucknow (Gomti Nagar, Hazratganj, etc.)
 3. Specific praise points
 
 **Sample Review Request**:
+
 ```
-Thank you for choosing Ginni Interior! We'd love if you could share your experience 
+Thank you for choosing Ginni Interior! We'd love if you could share your experience
 and mention:
 - The area in Lucknow where we completed your project
 - What specific service you loved (e.g., kitchen design, bedroom makeover)
@@ -202,6 +224,7 @@ This helps other Lucknow homeowners find us!
 ## 📱 Social Media Hashtags
 
 ### Use on every post:
+
 ```
 #InteriorDesignerLucknow
 #LucknowInteriors
@@ -221,7 +244,9 @@ This helps other Lucknow homeowners find us!
 ```
 
 ### Location Tagging:
+
 Always tag:
+
 - Lucknow, Uttar Pradesh
 - Specific neighborhood (Gomti Nagar, etc.)
 - Nearby landmarks
@@ -231,21 +256,25 @@ Always tag:
 ## 📊 Content Calendar with Local Focus
 
 ### Week 1: Area Spotlight
+
 - Monday: Gomti Nagar project showcase
 - Wednesday: "Why Gomti Nagar residents choose Ginni Interior"
 - Friday: Cost guide for Gomti Nagar apartments
 
 ### Week 2: Service Focus
+
 - Monday: Modular kitchen design trends in Lucknow
 - Wednesday: Office interior case study (Hazratganj)
 - Friday: Bedroom design tips for Lucknow climate
 
 ### Week 3: Comparison/Educational
+
 - Monday: "Traditional vs Modern: What works in Lucknow"
 - Wednesday: "Materials that work best in Lucknow's climate"
 - Friday: "Vastu tips for Lucknow homes"
 
 ### Week 4: Customer Stories
+
 - Monday: Before/After from Aliganj
 - Wednesday: Client testimonial video (mention location)
 - Friday: Portfolio roundup: Best of Lucknow 2025
@@ -267,14 +296,16 @@ Always tag:
 ### Post weekly on GMB (always mention Lucknow):
 
 **Offer Post**:
+
 ```
 🏠 Free Consultation for Lucknow Homeowners!
-Transform your space with Ginni Interior. Serving Gomti Nagar, Hazratganj, 
+Transform your space with Ginni Interior. Serving Gomti Nagar, Hazratganj,
 Aliganj & all of Lucknow. Call now!
 [CTA Button: Call Now]
 ```
 
 **Update Post**:
+
 ```
 ✨ New Project Completed in Gomti Nagar!
 Modern 3BHK transformation. See our portfolio for more Lucknow projects.
@@ -283,6 +314,7 @@ Modern 3BHK transformation. See our portfolio for more Lucknow projects.
 ```
 
 **Event Post**:
+
 ```
 📅 Free Home Interior Workshop - Lucknow
 Learn latest design trends for Lucknow homes. Limited seats!
@@ -296,6 +328,7 @@ Register now!
 ## 📈 Tracking Local Rankings
 
 ### Check these weekly:
+
 ```
 "interior designer in Lucknow" - Target: Position 1-3
 "best interior designer Lucknow" - Target: Position 1-3
@@ -307,6 +340,7 @@ Register now!
 ```
 
 ### Tools:
+
 - Google Search (incognito mode)
 - Google Search Console
 - Manual tracking in spreadsheet
@@ -316,6 +350,7 @@ Register now!
 ## 🎬 Video Content Ideas (YouTube SEO)
 
 ### Video Titles (always include "Lucknow"):
+
 1. "Modern Living Room Interior Design in Gomti Nagar, Lucknow | Ginni Interior"
 2. "Complete Home Tour: 3BHK Apartment in Hazratganj, Lucknow"
 3. "Modular Kitchen Design Ideas for Lucknow Homes | 2025 Trends"
@@ -323,6 +358,7 @@ Register now!
 5. "Interior Design Cost in Lucknow | Complete Budget Guide"
 
 ### Video Description Template:
+
 ```
 Welcome to Ginni Interior - Lucknow's leading interior design studio!
 
@@ -379,7 +415,7 @@ Services:
 
 ---
 
-**Remember**: Local SEO is about consistency, quality, and genuine local presence. 
+**Remember**: Local SEO is about consistency, quality, and genuine local presence.
 Always prioritize user experience while optimizing for search engines!
 
 ---
