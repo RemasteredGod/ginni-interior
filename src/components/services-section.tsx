@@ -8,27 +8,27 @@ const ServicesSection = () => {
   const services = [
     {
       icon: Home,
-      title: "Residential Design",
-      description: "Transform your home into a personalized sanctuary with our comprehensive residential design services. From concept to completion, we create spaces that reflect your lifestyle.",
-      features: ["Space Planning", "Color Consultation", "Furniture Selection", "Lighting Design"]
+      title: "Residential Interior Design Lucknow",
+      description: "Transform your Lucknow home into a personalized sanctuary with our comprehensive residential design services. From concept to completion, we create spaces that reflect your lifestyle across all areas of Lucknow.",
+      features: ["Modular Kitchen Design", "Bedroom & Living Room", "Space Planning & Vastu", "3D Visualization"]
     },
     {
       icon: Building2,
-      title: "Commercial Design",
-      description: "Elevate your business environment with professional commercial interior design. We create functional, inspiring workspaces that enhance productivity and brand identity.",
-      features: ["Office Layout", "Brand Integration", "Ergonomic Design", "Sustainable Solutions"]
+      title: "Commercial Interior Design Lucknow",
+      description: "Elevate your Lucknow business environment with professional commercial interior design. We create functional, inspiring workspaces that enhance productivity and brand identity for offices, retail, and restaurants.",
+      features: ["Office Interior Lucknow", "Retail & Restaurant Design", "Corporate Branding", "Ergonomic Workspaces"]
     },
     {
       icon: Wrench,
-      title: "Renovation",
-      description: "Breathe new life into existing spaces with our expert renovation services. We modernize and optimize your interiors while preserving architectural integrity.",
-      features: ["Structural Updates", "Material Selection", "Project Management", "Quality Assurance"]
+      title: "Home Renovation Services Lucknow",
+      description: "Breathe new life into existing Lucknow properties with our expert renovation services. We modernize and optimize your interiors while preserving architectural integrity and staying within budget.",
+      features: ["Complete Home Makeover", "Kitchen & Bathroom Remodel", "Flooring & False Ceiling", "Turnkey Solutions"]
     },
     {
       icon: Eye,
-      title: "3D Visualization",
-      description: "Experience your future space before construction begins with our advanced 3D visualization services. Make informed decisions with realistic renderings.",
-      features: ["Photorealistic Renderings", "Virtual Tours", "Material Samples", "Design Revisions"]
+      title: "3D Visualization & Virtual Tours",
+      description: "Experience your future Lucknow space before construction begins with our advanced 3D visualization services. Make informed decisions with photorealistic renderings and virtual walkthroughs.",
+      features: ["Photorealistic 3D Renders", "360° Virtual Tours", "Multiple Design Options", "Material Visualization"]
     }
   ];
 
@@ -71,10 +71,11 @@ const ServicesSection = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 font-[family-name:var(--font-playfair)]">
-            Our Services
+            Interior Design Services in Lucknow
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            We offer comprehensive interior design solutions tailored to your unique needs and vision.
+            We offer comprehensive interior design solutions tailored to Lucknow homes and businesses. 
+            From modern apartments to luxury villas, offices to retail spaces - we bring your vision to life.
           </p>
         </motion.div>
 

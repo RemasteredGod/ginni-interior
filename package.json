@@ -6,7 +6,10 @@
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "build:analyze": "ANALYZE=true next build",
+    "seo:check": "echo 'SEO Checklist: See SEO_CHECKLIST.md for tasks'",
+    "seo:guide": "echo 'SEO Guide: See SEO_IMPLEMENTATION_GUIDE.md for complete strategy'"
   },
   "dependencies": {
     "@radix-ui/react-icons": "^1.3.2",

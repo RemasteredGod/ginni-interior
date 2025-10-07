@@ -1,52 +1,57 @@
-"use client";
+'use client';
 
-import { motion } from "framer-motion";
-import { useState, useEffect } from "react";
-import { Card, CardContent } from "./ui/card";
-import { Star, ChevronLeft, ChevronRight } from "lucide-react";
+import { motion } from 'framer-motion';
+import { useState, useEffect } from 'react';
+import { Card, CardContent } from './ui/card';
+import { Star, ChevronLeft, ChevronRight } from 'lucide-react';
 
 const TestimonialsSection = () => {
   const testimonials = [
     {
       id: 1,
-      name: "Sarah Johnson",
-      role: "Homeowner",
-      content: "Ginni Interior transformed our house into a dream home. Their attention to detail and understanding of our vision was incredible. The final result exceeded our expectations.",
+      name: 'Sarah Johnson',
+      role: 'Homeowner',
+      content:
+        'Ginni Interior transformed our house into a dream home. Their attention to detail and understanding of our vision was incredible. The final result exceeded our expectations.',
       rating: 5,
-      project: "Living Room & Kitchen Renovation"
+      project: 'Living Room & Kitchen Renovation',
     },
     {
       id: 2,
-      name: "Michael Chen",
-      role: "Business Owner",
-      content: "Working with Ginni Interior on our office space was a game-changer. They created a modern, functional environment that our team loves. Productivity has increased significantly.",
+      name: 'Michael Chen',
+      role: 'Business Owner',
+      content:
+        'Working with Ginni Interior on our office space was a game-changer. They created a modern, functional environment that our team loves. Productivity has increased significantly.',
       rating: 5,
-      project: "Commercial Office Design"
+      project: 'Commercial Office Design',
     },
     {
       id: 3,
-      name: "Emily Rodriguez",
-      role: "Homeowner",
-      content: "From the initial consultation to the final walkthrough, Ginni Interior was professional and creative. They listened to our needs and delivered a space that's both beautiful and practical.",
+      name: 'Emily Rodriguez',
+      role: 'Homeowner',
+      content:
+        "From the initial consultation to the final walkthrough, Ginni Interior was professional and creative. They listened to our needs and delivered a space that's both beautiful and practical.",
       rating: 5,
-      project: "Master Bedroom Suite"
+      project: 'Master Bedroom Suite',
     },
     {
       id: 4,
-      name: "David Thompson",
-      role: "Restaurant Owner",
-      content: "The 3D visualizations helped us see exactly how our restaurant would look before construction. The final result perfectly matched our vision and has received countless compliments.",
+      name: 'David Thompson',
+      role: 'Restaurant Owner',
+      content:
+        'The 3D visualizations helped us see exactly how our restaurant would look before construction. The final result perfectly matched our vision and has received countless compliments.',
       rating: 5,
-      project: "Restaurant Interior Design"
+      project: 'Restaurant Interior Design',
     },
     {
       id: 5,
-      name: "Lisa Park",
-      role: "Homeowner",
-      content: "Ginni Interior's renovation services brought our outdated bathroom into the modern era. The quality of work and materials used is exceptional. Highly recommend their services!",
+      name: 'Lisa Park',
+      role: 'Homeowner',
+      content:
+        "Ginni Interior's renovation services brought our outdated bathroom into the modern era. The quality of work and materials used is exceptional. Highly recommend their services!",
       rating: 5,
-      project: "Bathroom Renovation"
-    }
+      project: 'Bathroom Renovation',
+    },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -68,7 +73,9 @@ const TestimonialsSection = () => {
   };
 
   const prevTestimonial = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + testimonials.length) % testimonials.length);
+    setCurrentIndex(
+      (prevIndex) => (prevIndex - 1 + testimonials.length) % testimonials.length
+    );
     setIsAutoPlaying(false);
   };
 
@@ -80,7 +87,10 @@ const TestimonialsSection = () => {
   const currentTestimonial = testimonials[currentIndex];
 
   return (
-    <section id="testimonials" className="py-20 bg-gradient-to-br from-white via-amber-50 to-orange-50 relative overflow-hidden">
+    <section
+      id="testimonials"
+      className="py-20 bg-gradient-to-br from-white via-amber-50 to-orange-50 relative overflow-hidden"
+    >
       {/* Background decorative elements */}
       <div className="absolute inset-0">
         <motion.div
@@ -91,7 +101,7 @@ const TestimonialsSection = () => {
           transition={{
             duration: 10,
             repeat: Infinity,
-            ease: "easeInOut"
+            ease: 'easeInOut',
           }}
           className="absolute top-40 left-40 w-28 h-28 bg-gradient-to-br from-amber-200 to-orange-300 rounded-full opacity-5"
         />
@@ -103,8 +113,8 @@ const TestimonialsSection = () => {
           transition={{
             duration: 12,
             repeat: Infinity,
-            ease: "easeInOut",
-            delay: 2
+            ease: 'easeInOut',
+            delay: 2,
           }}
           className="absolute bottom-40 right-40 w-24 h-24 bg-gradient-to-br from-orange-200 to-red-300 rounded-full opacity-5"
         />
@@ -121,7 +131,8 @@ const TestimonialsSection = () => {
             What Our Clients Say
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Don&apos;t just take our word for it. Here&apos;s what our satisfied clients have to say about their experience.
+            Don&apos;t just take our word for it. Here&apos;s what our satisfied
+            clients have to say about their experience.
           </p>
         </motion.div>
 
@@ -139,7 +150,7 @@ const TestimonialsSection = () => {
               <CardContent className="p-8 md:p-12">
                 <div className="flex flex-col md:flex-row items-center md:items-start gap-6">
                   <div className="flex-shrink-0">
-                    <motion.div 
+                    <motion.div
                       whileHover={{ scale: 1.1 }}
                       className="w-20 h-20 bg-gradient-to-br from-amber-100 to-orange-200 rounded-full flex items-center justify-center shadow-md"
                     >
@@ -151,7 +162,10 @@ const TestimonialsSection = () => {
                   <div className="flex-1 text-center md:text-left">
                     <div className="flex items-center justify-center md:justify-start mb-4">
                       {[...Array(currentTestimonial.rating)].map((_, i) => (
-                        <Star key={i} className="w-5 h-5 text-amber-400 fill-current" />
+                        <Star
+                          key={i}
+                          className="w-5 h-5 text-amber-400 fill-current"
+                        />
                       ))}
                     </div>
                     <blockquote className="text-lg text-gray-700 mb-6 italic leading-relaxed">
@@ -190,8 +204,8 @@ const TestimonialsSection = () => {
                   onClick={() => goToTestimonial(index)}
                   className={`w-3 h-3 rounded-full transition-colors duration-200 ${
                     index === currentIndex
-                      ? "bg-amber-600"
-                      : "bg-gray-300 hover:bg-amber-300"
+                      ? 'bg-amber-600'
+                      : 'bg-gray-300 hover:bg-amber-300'
                   }`}
                   aria-label={`Go to testimonial ${index + 1}`}
                 />
@@ -216,11 +230,11 @@ const TestimonialsSection = () => {
             className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center"
           >
             <div>
-              <div className="text-3xl font-bold text-amber-600 mb-2">150+</div>
+              <div className="text-3xl font-bold text-amber-600 mb-2">Many</div>
               <div className="text-gray-600">Projects Completed</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-amber-600 mb-2">98%</div>
+              <div className="text-3xl font-bold text-amber-600 mb-2">100%</div>
               <div className="text-gray-600">Client Satisfaction</div>
             </div>
             <div>

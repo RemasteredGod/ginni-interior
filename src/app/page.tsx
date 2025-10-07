@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       <Navigation />
-      <main>
+      <main role="main">
         <HeroSection />
         <AboutSection />
         <ServicesSection />

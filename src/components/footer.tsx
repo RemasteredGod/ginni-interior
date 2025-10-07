@@ -1,4 +1,4 @@
-import { Instagram, Linkedin, Facebook } from 'lucide-react';
+import { Instagram, Facebook } from 'lucide-react';
 import Image from 'next/image';
 
 const Footer = () => {
@@ -6,25 +6,31 @@ const Footer = () => {
     {
       name: 'Instagram',
       icon: Instagram,
-      href: 'https://instagram.com/ginniinterior',
+      href: 'https://www.instagram.com/ginni_interior/',
     },
     {
-      name: 'Pinterest',
+      name: 'Facebook',
       icon: Facebook,
-      href: 'https://pinterest.com/ginniinterior',
+      href: 'https://www.facebook.com/profile.php?id=61580059183159',
     },
-    {
-      name: 'LinkedIn',
-      icon: Linkedin,
-      href: 'https://linkedin.com/company/ginniinterior',
-    },
+    
   ];
 
   const quickLinks = [
-    { name: 'About', href: '#about' },
+    { name: 'About Us', href: '#about' },
     { name: 'Services', href: '#services' },
     { name: 'Portfolio', href: '#portfolio' },
+    { name: 'Testimonials', href: '#testimonials' },
     { name: 'Contact', href: '#contact' },
+  ];
+
+  const serviceAreas = [
+    'Gomti Nagar',
+    'Hazratganj',
+    'Aliganj',
+    'Indira Nagar',
+    'Alambagh',
+    'Mahanagar',
   ];
 
   return (
@@ -32,11 +38,11 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Logo and Description */}
-          <div className="md:col-span-2">
+          <div className="md:col-span-1">
             <div className="flex items-center space-x-3 mb-4">
               <Image
                 src="/ginni-logo.svg"
-                alt="Ginni Interior Logo"
+                alt="Ginni Interior Logo - Best Interior Designer in Lucknow"
                 width={48}
                 height={48}
                 className="h-12 w-auto"
@@ -46,10 +52,15 @@ const Footer = () => {
               </span>
             </div>
             <p className="text-gray-300 mb-6 max-w-md">
-              Transforming spaces with modern elegance. We create beautiful,
-              functional interiors that reflect your unique style and enhance
-              your lifestyle.
+              Lucknow&apos;s premier interior design studio. We create beautiful,
+              functional interiors that reflect your unique style. Serving residential 
+              and commercial clients across Lucknow with over 10 years of excellence.
             </p>
+            <div className="text-sm text-gray-400">
+              <p className="font-semibold text-amber-400 mb-2">Keywords:</p>
+              <p>Interior Designer Lucknow • Home Interior • Office Design • 
+              Modular Kitchen • 3D Visualization • Renovation Services</p>
+            </div>
           </div>
 
           {/* Quick Links */}
@@ -69,16 +80,35 @@ const Footer = () => {
             </ul>
           </div>
 
+          {/* Service Areas in Lucknow */}
+          <div>
+            <h3 className="text-lg font-semibold mb-4">Service Areas</h3>
+            <ul className="space-y-2 text-gray-300">
+              {serviceAreas.map((area) => (
+                <li key={area} className="text-sm">
+                  • {area}
+                </li>
+              ))}
+            </ul>
+            <p className="text-sm text-gray-400 mt-3">& All of Lucknow</p>
+          </div>
+
           {/* Contact Info */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Contact</h3>
-            <div className="space-y-2 text-gray-300">
-              <p>Phone: +91 9026353342</p>
-              <p>Email: abhaysharmaginnni@gmail.com</p>
+            <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
+            <div className="space-y-2 text-gray-300 text-sm">
+              <p><strong>Phone:</strong></p>
+              <p>+91 9026353342</p>
+              <p className="pt-2"><strong>Email:</strong></p>
+              <p>abhaysharmaginnni@gmail.com</p>
+              <p className="pt-2"><strong>Address:</strong></p>
               <p>
-                Address: 202-F, Harjinder Nagar, Ramadevi, Kanpur
-                <br />
-                Uttar Pradesh, India
+                202-F, Harjinder Nagar, Ramadevi<br />
+                Kanpur, Uttar Pradesh<br />
+                India
+              </p>
+              <p className="pt-2 text-amber-400 font-semibold">
+                Serving Lucknow & Nearby Areas
               </p>
             </div>
           </div>
