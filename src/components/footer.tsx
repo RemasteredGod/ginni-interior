@@ -1,5 +1,6 @@
-import { Instagram, Facebook } from 'lucide-react';
+import { Instagram, Facebook, Shield, Award, Clock, ThumbsUp } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Footer = () => {
   const socialLinks = [
@@ -17,9 +18,10 @@ const Footer = () => {
 
   const quickLinks = [
     { name: 'About Us', href: '#about' },
-    { name: 'Services', href: '#services' },
-    { name: 'Portfolio', href: '#portfolio' },
-    { name: 'Testimonials', href: '#testimonials' },
+    { name: 'Services', href: '/services' },
+    { name: 'Portfolio', href: '/portfolio' },
+    { name: 'Testimonials', href: '/testimonials' },
+    { name: 'Blog', href: '/blog' },
     { name: 'Contact', href: '#contact' },
   ];
 
@@ -71,12 +73,12 @@ const Footer = () => {
             <ul className="space-y-2">
               {quickLinks.map((link) => (
                 <li key={link.name}>
-                  <a
+                  <Link
                     href={link.href}
                     className="text-gray-300 hover:text-amber-400 transition-colors duration-200"
                   >
                     {link.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -120,6 +122,40 @@ const Footer = () => {
               <p className="pt-2 text-amber-400 font-semibold">
                 Serving Lucknow & Nearby Areas
               </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Trust Signals */}
+        <div className="border-t border-gray-800 mt-8 pt-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+            <div className="flex items-center space-x-3">
+              <Shield className="h-8 w-8 text-green-400" />
+              <div>
+                <p className="font-semibold text-sm">Secure & Trusted</p>
+                <p className="text-xs text-gray-400">SSL Protected Site</p>
+              </div>
+            </div>
+            <div className="flex items-center space-x-3">
+              <Award className="h-8 w-8 text-amber-400" />
+              <div>
+                <p className="font-semibold text-sm">Award Winning</p>
+                <p className="text-xs text-gray-400">Best in Lucknow 2024</p>
+              </div>
+            </div>
+            <div className="flex items-center space-x-3">
+              <Clock className="h-8 w-8 text-blue-400" />
+              <div>
+                <p className="font-semibold text-sm">10+ Years</p>
+                <p className="text-xs text-gray-400">Experience</p>
+              </div>
+            </div>
+            <div className="flex items-center space-x-3">
+              <ThumbsUp className="h-8 w-8 text-purple-400" />
+              <div>
+                <p className="font-semibold text-sm">500+ Projects</p>
+                <p className="text-xs text-gray-400">Completed</p>
+              </div>
             </div>
           </div>
         </div>
