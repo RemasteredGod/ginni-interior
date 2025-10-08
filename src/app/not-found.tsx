@@ -3,7 +3,8 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: '404 - Page Not Found',
-  description: 'The page you are looking for does not exist. Explore our interior design services in Lucknow.',
+  description:
+    'The page you are looking for does not exist. Explore our interior design services in Lucknow.',
   robots: {
     index: false,
     follow: true,
@@ -30,8 +31,8 @@ export default function NotFound() {
             Oops! Room Not Found
           </h2>
           <p className="text-lg md:text-xl text-neutral-600 max-w-2xl mx-auto">
-            Looks like this page got redesigned out of existence! 
-            Don&apos;t worry, we have plenty of beautiful spaces to explore.
+            Looks like this page got redesigned out of existence! Don&apos;t
+            worry, we have plenty of beautiful spaces to explore.
           </p>
         </div>
 
@@ -76,50 +77,50 @@ export default function NotFound() {
             Popular Services in Lucknow
           </h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
-            <Link 
-              href="/services/residential-interior-design" 
+            <Link
+              href="/services/residential-interior-design"
               className="text-neutral-600 hover:text-amber-600 transition-colors font-medium"
             >
               Residential Design
             </Link>
-            <Link 
-              href="/services" 
+            <Link
+              href="/services"
               className="text-neutral-600 hover:text-amber-600 transition-colors font-medium"
             >
               Commercial Design
             </Link>
-            <Link 
-              href="/services" 
+            <Link
+              href="/services"
               className="text-neutral-600 hover:text-amber-600 transition-colors font-medium"
             >
               Modular Kitchen
             </Link>
-            <Link 
-              href="/services" 
+            <Link
+              href="/services"
               className="text-neutral-600 hover:text-amber-600 transition-colors font-medium"
             >
               3D Visualization
             </Link>
-            <Link 
-              href="/services" 
+            <Link
+              href="/services"
               className="text-neutral-600 hover:text-amber-600 transition-colors font-medium"
             >
               Office Interior
             </Link>
-            <Link 
-              href="/services" 
+            <Link
+              href="/services"
               className="text-neutral-600 hover:text-amber-600 transition-colors font-medium"
             >
               Villa Design
             </Link>
-            <Link 
-              href="/services" 
+            <Link
+              href="/services"
               className="text-neutral-600 hover:text-amber-600 transition-colors font-medium"
             >
               Renovation
             </Link>
-            <Link 
-              href="/testimonials" 
+            <Link
+              href="/testimonials"
               className="text-neutral-600 hover:text-amber-600 transition-colors font-medium"
             >
               Client Reviews
@@ -133,7 +134,8 @@ export default function NotFound() {
             Need Help Finding Something?
           </h3>
           <p className="text-neutral-300 mb-6">
-            Our team is here to assist you with all your interior design needs in Lucknow
+            Our team is here to assist you with all your interior design needs
+            in Lucknow
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
@@ -154,11 +156,17 @@ export default function NotFound() {
         {/* Search Suggestion */}
         <p className="mt-8 text-neutral-500 text-sm">
           Looking for something specific? Try our{' '}
-          <Link href="/" className="text-amber-600 hover:text-amber-700 font-semibold">
+          <Link
+            href="/"
+            className="text-amber-600 hover:text-amber-700 font-semibold"
+          >
             homepage
           </Link>{' '}
           or{' '}
-          <Link href="/services" className="text-amber-600 hover:text-amber-700 font-semibold">
+          <Link
+            href="/services"
+            className="text-amber-600 hover:text-amber-700 font-semibold"
+          >
             explore our services
           </Link>
         </p>
