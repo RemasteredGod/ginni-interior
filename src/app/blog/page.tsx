@@ -7,7 +7,8 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 export const metadata: Metadata = {
   title: 'Interior Design Blog | Tips, Trends & Ideas for Lucknow Homes',
-  description: 'Expert interior design tips, latest trends, and home decor ideas for Lucknow residents. Learn from professional interior designers at Ginni Interior.',
+  description:
+    'Expert interior design tips, latest trends, and home decor ideas for Lucknow residents. Learn from professional interior designers at Ginni Interior.',
   keywords: [
     'interior design blog',
     'home decor tips Lucknow',
@@ -20,7 +21,8 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Interior Design Blog | Ginni Interior Lucknow',
-    description: 'Get expert interior design tips, trends, and inspiration for your Lucknow home.',
+    description:
+      'Get expert interior design tips, trends, and inspiration for your Lucknow home.',
     url: 'https://ginni-interior.com/blog',
   },
 };
@@ -29,7 +31,8 @@ const blogPosts = [
   {
     slug: 'top-10-interior-design-trends-2025-lucknow',
     title: 'Top 10 Interior Design Trends for 2025 in Lucknow',
-    excerpt: 'Discover the latest interior design trends that are transforming homes across Lucknow. From sustainable materials to smart home integration.',
+    excerpt:
+      'Discover the latest interior design trends that are transforming homes across Lucknow. From sustainable materials to smart home integration.',
     date: '2025-01-15',
     category: 'Trends',
     image: '/1.jpeg',
@@ -38,7 +41,8 @@ const blogPosts = [
   {
     slug: 'modular-kitchen-design-guide-lucknow',
     title: 'Complete Guide to Modular Kitchen Design in Lucknow',
-    excerpt: 'Everything you need to know about planning, designing, and installing a modular kitchen in your Lucknow home.',
+    excerpt:
+      'Everything you need to know about planning, designing, and installing a modular kitchen in your Lucknow home.',
     date: '2025-01-10',
     category: 'Kitchen',
     image: '/3.jpeg',
@@ -47,7 +51,8 @@ const blogPosts = [
   {
     slug: 'small-apartment-interior-design-tips',
     title: '15 Smart Ideas for Small Apartment Interiors',
-    excerpt: 'Maximize space and style in your compact Lucknow apartment with these expert interior design tips and tricks.',
+    excerpt:
+      'Maximize space and style in your compact Lucknow apartment with these expert interior design tips and tricks.',
     date: '2025-01-05',
     category: 'Tips',
     image: '/5.jpeg',
@@ -56,7 +61,8 @@ const blogPosts = [
   {
     slug: 'cost-of-interior-design-lucknow-2025',
     title: 'Interior Design Cost Guide for Lucknow Homes in 2025',
-    excerpt: 'Understand the costs involved in interior design projects in Lucknow with our comprehensive pricing guide.',
+    excerpt:
+      'Understand the costs involved in interior design projects in Lucknow with our comprehensive pricing guide.',
     date: '2024-12-28',
     category: 'Guide',
     image: '/2.jpeg',
@@ -65,7 +71,8 @@ const blogPosts = [
   {
     slug: 'bedroom-color-schemes-2025',
     title: 'Best Bedroom Color Schemes for Peaceful Sleep',
-    excerpt: 'Choose the perfect color palette for your bedroom to create a relaxing and restful environment.',
+    excerpt:
+      'Choose the perfect color palette for your bedroom to create a relaxing and restful environment.',
     date: '2024-12-20',
     category: 'Bedroom',
     image: '/4.jpeg',
@@ -74,7 +81,8 @@ const blogPosts = [
   {
     slug: 'sustainable-interior-design-lucknow',
     title: 'Sustainable Interior Design: Eco-Friendly Homes in Lucknow',
-    excerpt: 'Learn how to create beautiful, environmentally conscious interiors with sustainable materials and practices.',
+    excerpt:
+      'Learn how to create beautiful, environmentally conscious interiors with sustainable materials and practices.',
     date: '2024-12-15',
     category: 'Sustainability',
     image: '/6.jpeg',
@@ -87,7 +95,8 @@ export default function BlogPage() {
     '@context': 'https://schema.org',
     '@type': 'Blog',
     name: 'Ginni Interior Design Blog',
-    description: 'Expert interior design tips, trends, and ideas for Lucknow homes',
+    description:
+      'Expert interior design tips, trends, and ideas for Lucknow homes',
     url: 'https://ginni-interior.com/blog',
     publisher: {
       '@type': 'Organization',
@@ -124,7 +133,11 @@ export default function BlogPage() {
             {/* Breadcrumb */}
             <nav className="mb-8 text-sm" aria-label="Breadcrumb">
               <ol className="flex items-center space-x-2">
-                <li><Link href="/" className="text-primary hover:underline">Home</Link></li>
+                <li>
+                  <Link href="/" className="text-primary hover:underline">
+                    Home
+                  </Link>
+                </li>
                 <li>/</li>
                 <li className="text-muted-foreground">Blog</li>
               </ol>
@@ -135,7 +148,8 @@ export default function BlogPage() {
                 Interior Design Blog
               </h1>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                Expert tips, latest trends, and inspiring ideas for your Lucknow home
+                Expert tips, latest trends, and inspiring ideas for your Lucknow
+                home
               </p>
             </header>
 
@@ -150,19 +164,30 @@ export default function BlogPage() {
                   className="w-full h-full object-cover"
                 />
                 <div className="p-8 flex flex-col justify-center">
-                  <div className="text-primary text-sm font-semibold mb-2">FEATURED POST</div>
+                  <div className="text-primary text-sm font-semibold mb-2">
+                    FEATURED POST
+                  </div>
                   <h2 className="text-3xl font-bold mb-4">
-                    <Link href={`/blog/${blogPosts[0].slug}`} className="hover:text-primary transition">
+                    <Link
+                      href={`/blog/${blogPosts[0].slug}`}
+                      className="hover:text-primary transition"
+                    >
                       {blogPosts[0].title}
                     </Link>
                   </h2>
-                  <p className="text-muted-foreground mb-4">{blogPosts[0].excerpt}</p>
+                  <p className="text-muted-foreground mb-4">
+                    {blogPosts[0].excerpt}
+                  </p>
                   <div className="flex items-center gap-4 text-sm text-muted-foreground">
-                    <time>{new Date(blogPosts[0].date).toLocaleDateString('en-IN')}</time>
+                    <time>
+                      {new Date(blogPosts[0].date).toLocaleDateString('en-IN')}
+                    </time>
                     <span>•</span>
                     <span>{blogPosts[0].readTime}</span>
                     <span>•</span>
-                    <span className="text-primary">{blogPosts[0].category}</span>
+                    <span className="text-primary">
+                      {blogPosts[0].category}
+                    </span>
                   </div>
                 </div>
               </div>
@@ -171,7 +196,10 @@ export default function BlogPage() {
             {/* Blog Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {blogPosts.slice(1).map((post) => (
-                <Card key={post.slug} className="overflow-hidden hover:shadow-lg transition-shadow">
+                <Card
+                  key={post.slug}
+                  className="overflow-hidden hover:shadow-lg transition-shadow"
+                >
                   <Image
                     src={post.image}
                     alt={post.title}
@@ -181,7 +209,9 @@ export default function BlogPage() {
                   />
                   <CardHeader>
                     <div className="flex items-center gap-2 text-sm text-muted-foreground mb-2">
-                      <span className="text-primary font-semibold">{post.category}</span>
+                      <span className="text-primary font-semibold">
+                        {post.category}
+                      </span>
                       <span>•</span>
                       <span>{post.readTime}</span>
                     </div>
@@ -207,10 +237,20 @@ export default function BlogPage() {
             <section className="mt-16">
               <h2 className="text-2xl font-bold mb-6">Browse by Category</h2>
               <div className="flex flex-wrap gap-4">
-                {['All Posts', 'Trends', 'Tips', 'Kitchen', 'Bedroom', 'Guide', 'Sustainability'].map((category) => (
+                {[
+                  'All Posts',
+                  'Trends',
+                  'Tips',
+                  'Kitchen',
+                  'Bedroom',
+                  'Guide',
+                  'Sustainability',
+                ].map((category) => (
                   <Link
                     key={category}
-                    href={`/blog/category/${category.toLowerCase().replace(' ', '-')}`}
+                    href={`/blog/category/${category
+                      .toLowerCase()
+                      .replace(' ', '-')}`}
                     className="px-6 py-2 border rounded-full hover:bg-primary hover:text-primary-foreground transition"
                   >
                     {category}
@@ -221,9 +261,12 @@ export default function BlogPage() {
 
             {/* Newsletter Signup */}
             <section className="mt-16 bg-secondary/50 p-12 rounded-lg text-center">
-              <h2 className="text-3xl font-bold mb-4">Subscribe to Our Newsletter</h2>
+              <h2 className="text-3xl font-bold mb-4">
+                Subscribe to Our Newsletter
+              </h2>
               <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-                Get the latest interior design tips, trends, and exclusive offers delivered to your inbox every month
+                Get the latest interior design tips, trends, and exclusive
+                offers delivered to your inbox every month
               </p>
               <div className="max-w-md mx-auto flex gap-2">
                 <input
@@ -242,17 +285,32 @@ export default function BlogPage() {
             <nav className="mt-16" aria-label="Related Pages">
               <h2 className="text-2xl font-bold mb-6">Explore More</h2>
               <div className="grid md:grid-cols-3 gap-4">
-                <Link href="/services" className="p-4 border rounded-lg hover:border-primary transition">
+                <Link
+                  href="/services"
+                  className="p-4 border rounded-lg hover:border-primary transition"
+                >
                   <h3 className="font-semibold">Our Services</h3>
-                  <p className="text-sm text-muted-foreground">Professional interior design services</p>
+                  <p className="text-sm text-muted-foreground">
+                    Professional interior design services
+                  </p>
                 </Link>
-                <Link href="/portfolio" className="p-4 border rounded-lg hover:border-primary transition">
+                <Link
+                  href="/portfolio"
+                  className="p-4 border rounded-lg hover:border-primary transition"
+                >
                   <h3 className="font-semibold">Portfolio</h3>
-                  <p className="text-sm text-muted-foreground">View our completed projects</p>
+                  <p className="text-sm text-muted-foreground">
+                    View our completed projects
+                  </p>
                 </Link>
-                <Link href="/contact" className="p-4 border rounded-lg hover:border-primary transition">
+                <Link
+                  href="/contact"
+                  className="p-4 border rounded-lg hover:border-primary transition"
+                >
                   <h3 className="font-semibold">Free Consultation</h3>
-                  <p className="text-sm text-muted-foreground">Get expert advice today</p>
+                  <p className="text-sm text-muted-foreground">
+                    Get expert advice today
+                  </p>
                 </Link>
               </div>
             </nav>

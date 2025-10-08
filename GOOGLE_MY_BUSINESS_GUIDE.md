@@ -3,6 +3,7 @@
 ## 🎯 Why Google My Business is Critical
 
 Google My Business (now called Google Business Profile) is **THE MOST IMPORTANT** local SEO factor. It helps you:
+
 - Appear in "near me" searches
 - Show up in Google Maps
 - Display business info in Knowledge Panel
@@ -16,6 +17,7 @@ Google My Business (now called Google Business Profile) is **THE MOST IMPORTANT*
 ## 📋 STEP-BY-STEP SETUP
 
 ### Step 1: Create Your Profile
+
 1. Go to https://business.google.com/
 2. Click "Manage now"
 3. Enter business name: **Ginni Interior**
@@ -27,6 +29,7 @@ Google My Business (now called Google Business Profile) is **THE MOST IMPORTANT*
    - Furniture Store
 
 ### Step 2: Add Business Location
+
 ```
 Business Name: Ginni Interior
 Street Address: [Your Complete Address]
@@ -36,12 +39,14 @@ PIN Code: [Your PIN]
 Country: India
 ```
 
-**Important:** 
+**Important:**
+
 - Use your actual business address
 - If home-based, you can hide address and show service area
 - Add service areas: Gomti Nagar, Aliganj, Hazratganj, Indira Nagar, etc.
 
 ### Step 3: Add Contact Information
+
 ```
 Phone: [Your Business Phone Number]
 Website: https://ginni-interior.com
@@ -49,6 +54,7 @@ WhatsApp: [Your WhatsApp Business Number]
 ```
 
 ### Step 4: Business Hours
+
 ```
 Monday:     9:00 AM - 6:00 PM
 Tuesday:    9:00 AM - 6:00 PM
@@ -60,7 +66,9 @@ Sunday:     Closed (or your preferred hours)
 ```
 
 ### Step 5: Verification
+
 Google will verify your business via:
+
 - Postcard sent to your address (most common)
 - Phone call
 - Email
@@ -75,16 +83,20 @@ Google will verify your business via:
 ### Photos to Upload (CRITICAL for Conversions):
 
 #### 1. Logo
+
 - Upload: `/public/ginni-logo.svg` or PNG version
 - Size: Square, minimum 720x720px
 
 #### 2. Cover Photo
+
 - Best project photo showing your work
 - Size: 1024x576px
 - Landscape orientation
 
 #### 3. Interior & Exterior Photos
+
 Upload at least 15-20 photos:
+
 - Completed project photos (before/after)
 - Office/showroom images
 - Team photos
@@ -92,6 +104,7 @@ Upload at least 15-20 photos:
 - Different room types (kitchen, bedroom, living room)
 
 **Photo Guidelines:**
+
 - High resolution (minimum 720x720px)
 - Good lighting
 - No watermarks
@@ -99,6 +112,7 @@ Upload at least 15-20 photos:
 - Name files descriptively: `modern-kitchen-lucknow-gomti-nagar.jpg`
 
 #### 4. Videos
+
 - Project walkthroughs
 - Client testimonials
 - Design process videos
@@ -140,6 +154,7 @@ Contact us today for a free consultation and transform your space!
 ## 🌟 GET REVIEWS (MOST IMPORTANT!)
 
 ### Why Reviews Matter:
+
 - 88% of consumers trust online reviews as much as personal recommendations
 - Reviews are a TOP 3 ranking factor for local SEO
 - Businesses with 40+ reviews get 54% more traffic
@@ -147,17 +162,20 @@ Contact us today for a free consultation and transform your space!
 ### How to Get Reviews:
 
 #### 1. Create Your Review Link
+
 Format: `https://g.page/r/[YOUR_BUSINESS_CODE]/review`
 
 Get this from your Google Business Profile dashboard.
 
 #### 2. Ask Every Happy Client
+
 **In Person:**
 "We'd really appreciate if you could share your experience on Google. It helps other homeowners find us!"
 
 **Via WhatsApp/SMS:**
+
 ```
-Hi [Client Name]! 
+Hi [Client Name]!
 
 We're so glad you love your new [kitchen/bedroom/home] interior! 🎉
 
@@ -170,16 +188,17 @@ Thank you so much!
 ```
 
 **Via Email:**
+
 ```
 Subject: We'd Love Your Feedback! ⭐
 
 Dear [Client Name],
 
-Thank you for choosing Ginni Interior for your [project type]. 
+Thank you for choosing Ginni Interior for your [project type].
 We hope you're enjoying your beautifully designed space!
 
-If you're happy with our work, we'd be grateful if you could 
-share your experience on Google. It only takes 2 minutes and 
+If you're happy with our work, we'd be grateful if you could
+share your experience on Google. It only takes 2 minutes and
 helps other homeowners discover us.
 
 [REVIEW BUTTON]
@@ -191,12 +210,14 @@ Ginni Interior Team
 ```
 
 #### 3. Best Time to Ask:
+
 - Right after project completion (when excitement is highest)
 - During final walkthrough
 - 1 week after project handover
 - When client sends appreciation message
 
 #### 4. Make it Easy:
+
 - QR code linking to review page
 - Direct link in WhatsApp
 - Add review link to email signature
@@ -211,10 +232,11 @@ Post regularly on your Google Business Profile (like social media):
 ### Post Types:
 
 #### 1. Project Showcases (Weekly)
+
 ```
 ✨ Modern Kitchen Transformation in Gomti Nagar ✨
 
-Check out this stunning modular kitchen we designed 
+Check out this stunning modular kitchen we designed
 for a family in Gomti Nagar, Lucknow!
 
 ✓ Smart storage solutions
@@ -227,10 +249,11 @@ Want a dream kitchen? Call us: [PHONE]
 ```
 
 #### 2. Offers & Promotions
+
 ```
 🎉 SPECIAL OFFER: FREE 3D Design! 🎉
 
-Get a FREE 3D visualization worth ₹5,000 with 
+Get a FREE 3D visualization worth ₹5,000 with
 any complete home interior package this month!
 
 Limited slots available. Book your consultation now!
@@ -239,23 +262,25 @@ Call: [PHONE]
 ```
 
 #### 3. Updates & News
+
 ```
 🏆 Awarded Best Interior Designer in Lucknow 2024!
 
-Thank you to all our amazing clients for making 
-this possible. Your trust drives us to deliver 
+Thank you to all our amazing clients for making
+this possible. Your trust drives us to deliver
 excellence every day!
 
 #AwardWinning #LucknowInteriors
 ```
 
 #### 4. Tips & Advice
+
 ```
 💡 Interior Design Tip: Color Psychology
 
 Did you know blue tones in bedrooms promote better sleep?
 
-For more design tips and free consultation, 
+For more design tips and free consultation,
 visit our website or call us today!
 ```
 
@@ -264,19 +289,24 @@ visit our website or call us today!
 ## 🔧 GOOGLE MY BUSINESS FEATURES TO ENABLE
 
 ### 1. Messaging
+
 Enable messaging so customers can text you directly from Google
 
 ### 2. Booking Button (if applicable)
+
 "Book Appointment" or "Request Quote"
 
 ### 3. Products & Services
+
 Add your service listings with prices:
+
 - Residential Interior (₹1,500/sq ft onwards)
 - Modular Kitchen (₹80,000 onwards)
 - 3D Visualization (₹5,000)
 - Consultation (Free)
 
 ### 4. Q&A Section
+
 Proactively add common questions:
 
 **Q: Do you provide free consultation?**
@@ -292,7 +322,9 @@ A: Yes, we provide 5 years warranty on all our interior work.
 A: We serve all areas of Lucknow including Gomti Nagar, Hazratganj, Aliganj, Indira Nagar, Alambagh, Eldeco, and surrounding regions.
 
 ### 5. Attributes
+
 Enable relevant attributes:
+
 - ✓ Free consultation
 - ✓ Online appointments
 - ✓ On-site services
@@ -305,6 +337,7 @@ Enable relevant attributes:
 ## 📊 TRACK YOUR PERFORMANCE
 
 ### Insights to Monitor (Monthly):
+
 1. **Search Queries** - What people search to find you
 2. **Views** - Profile views and search impressions
 3. **Actions** - Website clicks, calls, direction requests
@@ -312,6 +345,7 @@ Enable relevant attributes:
 5. **Review Count & Rating** - Track growth over time
 
 ### Goals to Set:
+
 - **Month 1:** Get 10 reviews
 - **Month 3:** Achieve 25+ reviews
 - **Month 6:** Reach 50+ reviews with 4.8+ rating
@@ -343,16 +377,19 @@ Enable relevant attributes:
 ## 🎯 RESULT EXPECTATIONS
 
 **After 30 Days:**
+
 - Profile fully optimized and verified
 - 10-15 reviews
 - Appearing in local pack for some keywords
 
 **After 90 Days:**
+
 - 25-40 reviews
 - Regular ranking in top 5 for "interior designer near me"
 - Consistent calls and inquiries from Google
 
 **After 6 Months:**
+
 - 50+ reviews with 4.8+ rating
 - Top 3 ranking for "interior designer Lucknow"
 - 40-50% of leads coming from Google My Business
@@ -361,4 +398,4 @@ Enable relevant attributes:
 
 **Remember:** Google My Business is FREE and THE MOST POWERFUL local SEO tool. Invest time in optimizing it!
 
-*Last Updated: October 8, 2025*
+_Last Updated: October 8, 2025_

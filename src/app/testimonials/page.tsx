@@ -7,7 +7,8 @@ import { Button } from '@/components/ui/button';
 
 export const metadata: Metadata = {
   title: 'Client Reviews & Testimonials | Ginni Interior Lucknow',
-  description: 'Read genuine reviews and testimonials from our satisfied clients across Lucknow. See why Ginni Interior is the top-rated interior designer in Lucknow with 4.9/5 rating.',
+  description:
+    'Read genuine reviews and testimonials from our satisfied clients across Lucknow. See why Ginni Interior is the top-rated interior designer in Lucknow with 4.9/5 rating.',
   keywords: [
     'interior designer reviews Lucknow',
     'Ginni Interior testimonials',
@@ -19,7 +20,8 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Client Testimonials | Ginni Interior Lucknow',
-    description: '500+ happy clients and 4.9/5 rating. Read authentic reviews from our interior design clients in Lucknow.',
+    description:
+      '500+ happy clients and 4.9/5 rating. Read authentic reviews from our interior design clients in Lucknow.',
     url: 'https://ginni-interior.com/testimonials',
   },
 };
@@ -129,7 +131,11 @@ export default function TestimonialsPage() {
             {/* Breadcrumb */}
             <nav className="mb-8 text-sm" aria-label="Breadcrumb">
               <ol className="flex items-center space-x-2">
-                <li><Link href="/" className="text-primary hover:underline">Home</Link></li>
+                <li>
+                  <Link href="/" className="text-primary hover:underline">
+                    Home
+                  </Link>
+                </li>
                 <li>/</li>
                 <li className="text-muted-foreground">Testimonials</li>
               </ol>
@@ -140,7 +146,9 @@ export default function TestimonialsPage() {
                 Client Reviews & Testimonials
               </h1>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-6">
-                Don&apos;t just take our word for it. Here&apos;s what our clients across Lucknow have to say about their experience with Ginni Interior.
+                Don&apos;t just take our word for it. Here&apos;s what our
+                clients across Lucknow have to say about their experience with
+                Ginni Interior.
               </p>
               <div className="flex items-center justify-center gap-2">
                 <div className="text-3xl font-bold text-primary">4.9/5</div>
@@ -151,13 +159,22 @@ export default function TestimonialsPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
               {testimonials.map((testimonial) => (
-                <Card key={testimonial.id} className="hover:shadow-lg transition-shadow">
+                <Card
+                  key={testimonial.id}
+                  className="hover:shadow-lg transition-shadow"
+                >
                   <CardContent className="pt-6">
                     <div className="flex justify-between items-start mb-4">
                       <div>
-                        <h3 className="font-bold text-lg">{testimonial.name}</h3>
-                        <p className="text-sm text-muted-foreground">{testimonial.location}</p>
-                        <p className="text-xs text-muted-foreground">{testimonial.project}</p>
+                        <h3 className="font-bold text-lg">
+                          {testimonial.name}
+                        </h3>
+                        <p className="text-sm text-muted-foreground">
+                          {testimonial.location}
+                        </p>
+                        <p className="text-xs text-muted-foreground">
+                          {testimonial.project}
+                        </p>
                       </div>
                       <div className="text-yellow-500 text-lg">
                         {'★'.repeat(testimonial.rating)}
@@ -179,27 +196,37 @@ export default function TestimonialsPage() {
 
             {/* Trust Badges */}
             <section className="bg-secondary/50 p-12 rounded-lg text-center mb-16">
-              <h2 className="text-3xl font-bold mb-8">Trusted by 500+ Clients in Lucknow</h2>
+              <h2 className="text-3xl font-bold mb-8">
+                Trusted by 500+ Clients in Lucknow
+              </h2>
               <div className="grid md:grid-cols-4 gap-8">
                 <div>
                   <div className="text-4xl mb-2">🏆</div>
                   <h3 className="font-semibold mb-2">Award Winning</h3>
-                  <p className="text-sm text-muted-foreground">Best Interior Designer Lucknow 2023</p>
+                  <p className="text-sm text-muted-foreground">
+                    Best Interior Designer Lucknow 2023
+                  </p>
                 </div>
                 <div>
                   <div className="text-4xl mb-2">✓</div>
                   <h3 className="font-semibold mb-2">Quality Assured</h3>
-                  <p className="text-sm text-muted-foreground">5 Years Warranty on Work</p>
+                  <p className="text-sm text-muted-foreground">
+                    5 Years Warranty on Work
+                  </p>
                 </div>
                 <div>
                   <div className="text-4xl mb-2">⚡</div>
                   <h3 className="font-semibold mb-2">On-Time Delivery</h3>
-                  <p className="text-sm text-muted-foreground">98% Projects Delivered on Schedule</p>
+                  <p className="text-sm text-muted-foreground">
+                    98% Projects Delivered on Schedule
+                  </p>
                 </div>
                 <div>
                   <div className="text-4xl mb-2">💰</div>
                   <h3 className="font-semibold mb-2">Transparent Pricing</h3>
-                  <p className="text-sm text-muted-foreground">No Hidden Costs</p>
+                  <p className="text-sm text-muted-foreground">
+                    No Hidden Costs
+                  </p>
                 </div>
               </div>
             </section>
@@ -221,17 +248,32 @@ export default function TestimonialsPage() {
             <nav className="mt-16" aria-label="Related Pages">
               <h2 className="text-2xl font-bold mb-6">Explore More</h2>
               <div className="grid md:grid-cols-3 gap-4">
-                <Link href="/portfolio" className="p-4 border rounded-lg hover:border-primary transition">
+                <Link
+                  href="/portfolio"
+                  className="p-4 border rounded-lg hover:border-primary transition"
+                >
                   <h3 className="font-semibold">View Portfolio</h3>
-                  <p className="text-sm text-muted-foreground">See our completed projects</p>
+                  <p className="text-sm text-muted-foreground">
+                    See our completed projects
+                  </p>
                 </Link>
-                <Link href="/services" className="p-4 border rounded-lg hover:border-primary transition">
+                <Link
+                  href="/services"
+                  className="p-4 border rounded-lg hover:border-primary transition"
+                >
                   <h3 className="font-semibold">Our Services</h3>
-                  <p className="text-sm text-muted-foreground">Explore what we offer</p>
+                  <p className="text-sm text-muted-foreground">
+                    Explore what we offer
+                  </p>
                 </Link>
-                <Link href="/contact" className="p-4 border rounded-lg hover:border-primary transition">
+                <Link
+                  href="/contact"
+                  className="p-4 border rounded-lg hover:border-primary transition"
+                >
                   <h3 className="font-semibold">Contact Us</h3>
-                  <p className="text-sm text-muted-foreground">Get in touch today</p>
+                  <p className="text-sm text-muted-foreground">
+                    Get in touch today
+                  </p>
                 </Link>
               </div>
             </nav>

@@ -1,4 +1,11 @@
-import { Instagram, Facebook, Shield, Award, Clock, ThumbsUp } from 'lucide-react';
+import {
+  Instagram,
+  Facebook,
+  Shield,
+  Award,
+  Clock,
+  ThumbsUp,
+} from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 

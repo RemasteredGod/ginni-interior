@@ -7,7 +7,8 @@ import { Button } from '@/components/ui/button';
 
 export const metadata: Metadata = {
   title: 'Interior Design Portfolio Lucknow | Our Completed Projects',
-  description: 'View our portfolio of completed interior design projects in Lucknow. Residential homes, commercial offices, villas, and more. Get inspired for your next project with Ginni Interior.',
+  description:
+    'View our portfolio of completed interior design projects in Lucknow. Residential homes, commercial offices, villas, and more. Get inspired for your next project with Ginni Interior.',
   keywords: [
     'interior design portfolio Lucknow',
     'completed projects Lucknow',
@@ -20,7 +21,8 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Interior Design Portfolio | Ginni Interior Lucknow',
-    description: 'Explore our stunning portfolio of residential and commercial interior design projects in Lucknow.',
+    description:
+      'Explore our stunning portfolio of residential and commercial interior design projects in Lucknow.',
     url: 'https://ginni-interior.com/portfolio',
     images: [
       {
@@ -118,7 +120,11 @@ export default function PortfolioPage() {
             {/* Breadcrumb */}
             <nav className="mb-8 text-sm" aria-label="Breadcrumb">
               <ol className="flex items-center space-x-2">
-                <li><Link href="/" className="text-primary hover:underline">Home</Link></li>
+                <li>
+                  <Link href="/" className="text-primary hover:underline">
+                    Home
+                  </Link>
+                </li>
                 <li>/</li>
                 <li className="text-muted-foreground">Portfolio</li>
               </ol>
@@ -129,8 +135,9 @@ export default function PortfolioPage() {
                 Our Interior Design Portfolio
               </h1>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                Explore our collection of completed projects across Lucknow. Each project showcases our
-                commitment to quality, creativity, and client satisfaction.
+                Explore our collection of completed projects across Lucknow.
+                Each project showcases our commitment to quality, creativity,
+                and client satisfaction.
               </p>
             </header>
 
@@ -154,10 +161,16 @@ export default function PortfolioPage() {
                   </div>
                   <div className="p-6">
                     <h2 className="text-xl font-bold mb-2">{project.title}</h2>
-                    <p className="text-muted-foreground mb-3">{project.description}</p>
+                    <p className="text-muted-foreground mb-3">
+                      {project.description}
+                    </p>
                     <div className="flex justify-between text-sm">
-                      <span className="text-muted-foreground">📍 {project.location}</span>
-                      <span className="text-muted-foreground">📐 {project.area}</span>
+                      <span className="text-muted-foreground">
+                        📍 {project.location}
+                      </span>
+                      <span className="text-muted-foreground">
+                        📐 {project.area}
+                      </span>
                     </div>
                   </div>
                 </article>
@@ -178,18 +191,26 @@ export default function PortfolioPage() {
 
             {/* Trust Signals */}
             <section className="mt-16">
-              <h2 className="text-2xl font-bold mb-6 text-center">Why Choose Ginni Interior</h2>
+              <h2 className="text-2xl font-bold mb-6 text-center">
+                Why Choose Ginni Interior
+              </h2>
               <div className="grid md:grid-cols-4 gap-6 text-center">
                 <div>
-                  <div className="text-4xl font-bold text-primary mb-2">500+</div>
+                  <div className="text-4xl font-bold text-primary mb-2">
+                    500+
+                  </div>
                   <p className="font-semibold">Projects Completed</p>
                 </div>
                 <div>
-                  <div className="text-4xl font-bold text-primary mb-2">10+</div>
+                  <div className="text-4xl font-bold text-primary mb-2">
+                    10+
+                  </div>
                   <p className="font-semibold">Years Experience</p>
                 </div>
                 <div>
-                  <div className="text-4xl font-bold text-primary mb-2">98%</div>
+                  <div className="text-4xl font-bold text-primary mb-2">
+                    98%
+                  </div>
                   <p className="font-semibold">Client Satisfaction</p>
                 </div>
                 <div>
@@ -203,17 +224,32 @@ export default function PortfolioPage() {
             <nav className="mt-16" aria-label="Related Pages">
               <h2 className="text-2xl font-bold mb-6">Explore More</h2>
               <div className="grid md:grid-cols-3 gap-4">
-                <Link href="/services" className="p-4 border rounded-lg hover:border-primary transition">
+                <Link
+                  href="/services"
+                  className="p-4 border rounded-lg hover:border-primary transition"
+                >
                   <h3 className="font-semibold">Our Services</h3>
-                  <p className="text-sm text-muted-foreground">Explore our interior design services</p>
+                  <p className="text-sm text-muted-foreground">
+                    Explore our interior design services
+                  </p>
                 </Link>
-                <Link href="/testimonials" className="p-4 border rounded-lg hover:border-primary transition">
+                <Link
+                  href="/testimonials"
+                  className="p-4 border rounded-lg hover:border-primary transition"
+                >
                   <h3 className="font-semibold">Client Testimonials</h3>
-                  <p className="text-sm text-muted-foreground">Read what our clients say</p>
+                  <p className="text-sm text-muted-foreground">
+                    Read what our clients say
+                  </p>
                 </Link>
-                <Link href="/contact" className="p-4 border rounded-lg hover:border-primary transition">
+                <Link
+                  href="/contact"
+                  className="p-4 border rounded-lg hover:border-primary transition"
+                >
                   <h3 className="font-semibold">Contact Us</h3>
-                  <p className="text-sm text-muted-foreground">Get a free consultation</p>
+                  <p className="text-sm text-muted-foreground">
+                    Get a free consultation
+                  </p>
                 </Link>
               </div>
             </nav>
