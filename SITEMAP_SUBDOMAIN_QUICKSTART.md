@@ -15,18 +15,22 @@ I've configured your project to host sitemaps on a subdomain (e.g., `sitemap.you
 ## 🚀 Quick Setup (3 Steps)
 
 ### Step 1: Deploy to Vercel
+
 ```bash
 vercel --prod
 ```
 
 ### Step 2: Add Subdomain in Vercel
+
 1. Go to your [Vercel Dashboard](https://vercel.com/dashboard)
 2. Select your project
 3. Settings → Domains
 4. Add: `sitemap.yourdomain.com`
 
 ### Step 3: Configure DNS
+
 Add a CNAME record to your DNS provider:
+
 ```
 Type:  CNAME
 Name:  sitemap
@@ -37,6 +41,7 @@ TTL:   3600
 ## 🎯 What You'll Get
 
 After setup, your sitemaps will be available at:
+
 - `https://sitemap.yourdomain.com/sitemap.xml`
 - `https://sitemap.yourdomain.com/sitemap2.xml`
 - `https://sitemap.yourdomain.com/sitemap3.xml`
@@ -55,6 +60,7 @@ Visit `https://sitemap.yourdomain.com/` for a nice index page!
 ## 🔍 Testing
 
 After DNS propagates (15 mins - 48 hours):
+
 ```bash
 # Test DNS resolution
 nslookup sitemap.yourdomain.com
@@ -73,16 +79,18 @@ curl -I https://sitemap.yourdomain.com/sitemap.xml
 ✅ **SEO Benefits**: Clean separation, better organization  
 ✅ **Performance**: Dedicated caching strategy  
 ✅ **Maintenance**: Easy to update without touching main site  
-✅ **Professional**: Shows attention to detail  
+✅ **Professional**: Shows attention to detail
 
 ## 🆘 Troubleshooting
 
 **Subdomain not working?**
+
 - Wait for DNS propagation (up to 48 hours)
 - Check DNS records are correct
 - Verify domain is added in Vercel dashboard
 
 **404 errors?**
+
 - Ensure files are in `/public` folder
 - Check middleware.ts is deployed
 - Verify vercel.json configuration
