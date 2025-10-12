@@ -106,7 +106,7 @@ export default function RootLayout({
   // Structured Data for Local Business SEO
   const structuredData = {
     '@context': 'https://schema.org',
-    '@type': 'InteriorDesignService',
+    '@type': 'LocalBusiness',
     '@id': 'https://ginni-interior.com',
     name: 'Ginni Interior',
     image: 'https://ginni-interior.com/ginni-logo.svg',
@@ -153,53 +153,6 @@ export default function RootLayout({
       'https://www.linkedin.com/company/ginniinterior',
       'https://twitter.com/ginniinterior',
     ],
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: '4.9',
-      reviewCount: '150',
-    },
-    hasOfferCatalog: {
-      '@type': 'OfferCatalog',
-      name: 'Interior Design Services',
-      itemListElement: [
-        {
-          '@type': 'Offer',
-          itemOffered: {
-            '@type': 'Service',
-            name: 'Residential Interior Design in Lucknow',
-            description:
-              'Complete home interior design including living rooms, bedrooms, kitchens, and more.',
-          },
-        },
-        {
-          '@type': 'Offer',
-          itemOffered: {
-            '@type': 'Service',
-            name: 'Commercial Interior Design in Lucknow',
-            description:
-              'Professional office and commercial space interior design solutions.',
-          },
-        },
-        {
-          '@type': 'Offer',
-          itemOffered: {
-            '@type': 'Service',
-            name: '3D Visualization Services',
-            description:
-              'Photorealistic 3D rendering and virtual tours of your interior design.',
-          },
-        },
-        {
-          '@type': 'Offer',
-          itemOffered: {
-            '@type': 'Service',
-            name: 'Interior Renovation in Lucknow',
-            description:
-              'Complete renovation services to modernize existing spaces.',
-          },
-        },
-      ],
-    },
   };
 
   return (

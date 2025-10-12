@@ -2,7 +2,26 @@
 
 ## Issues Fixed
 
-### 1. Invalid Review Schema Error
+### 1. Invalid Review Schema Error on Homepage
+**Problem:** Google Search Console was showing errors for the main page (https://www.ginniinterior.com/)
+- "Invalid object type for field 'itemReviewed'" 
+- Item: Ginni Interior
+
+**Root Cause:** 
+- The main layout was using `@type: "InteriorDesignService"` with `aggregateRating`
+- Having aggregateRating implies reviews exist, but no review objects were attached
+- InteriorDesignService combined with aggregateRating without actual reviews causes validation errors
+- Google expects either:
+  - LocalBusiness with reviews and aggregateRating
+  - OR just business info without ratings if no reviews
+
+**Solution Applied:**
+- Changed `@type` from "InteriorDesignService" to "LocalBusiness"
+- Removed `aggregateRating` from the main page (only show on testimonials page where actual reviews exist)
+- Removed `hasOfferCatalog` (can be added back as separate Service schemas if needed)
+- Kept all essential business information: name, address, phone, hours, geo coordinates
+
+### 2. Invalid Review Schema Error on Testimonials Page
 
 **Problem:** Google Search Console was showing "Invalid object type for field 'itemReviewed'" error.
 
