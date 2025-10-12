@@ -105,22 +105,18 @@ export const breadcrumbSchema = {
 };
 
 // Review Schema - showcase customer reviews
+// Note: Reviews should be attached to LocalBusiness or Organization, not used standalone
 export const reviewSchema = {
   '@context': 'https://schema.org',
   '@type': 'Review',
-  itemReviewed: {
-    '@type': 'Service',
-    additionalType: 'https://schema.org/InteriorDesignService',
-    name: 'Ginni Interior',
+  author: {
+    '@type': 'Person',
+    name: 'Client Name',
   },
   reviewRating: {
     '@type': 'Rating',
     ratingValue: '5',
     bestRating: '5',
-  },
-  author: {
-    '@type': 'Person',
-    name: 'Client Name',
   },
   reviewBody:
     'Excellent interior design service in Lucknow. The team at Ginni Interior transformed our 3BHK apartment beautifully. Highly professional and creative.',

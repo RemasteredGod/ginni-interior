@@ -92,8 +92,22 @@ const testimonials = [
 export default function TestimonialsPage() {
   const structuredData = {
     '@context': 'https://schema.org',
-    '@type': 'Organization',
+    '@type': 'LocalBusiness',
+    '@id': 'https://ginni-interior.com',
     name: 'Ginni Interior',
+    url: 'https://ginni-interior.com',
+    image: 'https://ginni-interior.com/ginni-logo.svg',
+    description: 'Premier interior designer in Lucknow specializing in residential and commercial spaces with 10+ years of experience.',
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: 'Your Street Address',
+      addressLocality: 'Lucknow',
+      addressRegion: 'Uttar Pradesh',
+      postalCode: '226001',
+      addressCountry: 'IN',
+    },
+    telephone: '+91-XXXXXXXXXX',
+    priceRange: '$$',
     aggregateRating: {
       '@type': 'AggregateRating',
       ratingValue: '4.9',
@@ -103,11 +117,6 @@ export default function TestimonialsPage() {
     },
     review: testimonials.map((testimonial) => ({
       '@type': 'Review',
-      itemReviewed: {
-        '@type': 'Service',
-        additionalType: 'https://schema.org/InteriorDesignService',
-        name: 'Ginni Interior Design Services',
-      },
       author: {
         '@type': 'Person',
         name: testimonial.name,
@@ -116,7 +125,7 @@ export default function TestimonialsPage() {
       reviewBody: testimonial.review,
       reviewRating: {
         '@type': 'Rating',
-        ratingValue: testimonial.rating,
+        ratingValue: testimonial.rating.toString(),
         bestRating: '5',
         worstRating: '1',
       },
