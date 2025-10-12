@@ -103,6 +103,11 @@ export default function TestimonialsPage() {
     },
     review: testimonials.map((testimonial) => ({
       '@type': 'Review',
+      itemReviewed: {
+        '@type': 'Service',
+        additionalType: 'https://schema.org/InteriorDesignService',
+        name: 'Ginni Interior Design Services',
+      },
       author: {
         '@type': 'Person',
         name: testimonial.name,
