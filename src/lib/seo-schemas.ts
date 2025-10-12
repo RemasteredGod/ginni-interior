@@ -109,7 +109,8 @@ export const reviewSchema = {
   '@context': 'https://schema.org',
   '@type': 'Review',
   itemReviewed: {
-    '@type': 'InteriorDesignService',
+    '@type': 'Service',
+    additionalType: 'https://schema.org/InteriorDesignService',
     name: 'Ginni Interior',
   },
   reviewRating: {
