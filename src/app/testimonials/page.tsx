@@ -97,7 +97,8 @@ export default function TestimonialsPage() {
     name: 'Ginni Interior',
     url: 'https://ginni-interior.com',
     image: 'https://ginni-interior.com/ginni-logo.svg',
-    description: 'Premier interior designer in Lucknow specializing in residential and commercial spaces with 10+ years of experience.',
+    description:
+      'Premier interior designer in Lucknow specializing in residential and commercial spaces with 10+ years of experience.',
     address: {
       '@type': 'PostalAddress',
       streetAddress: 'Your Street Address',
