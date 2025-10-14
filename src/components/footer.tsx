@@ -60,10 +60,10 @@ const Footer = () => {
               </span>
             </div>
             <p className="text-gray-300 mb-6 max-w-md">
-              Kanpur&apos;s premier interior design studio. We create
-              beautiful, functional interiors that reflect your unique style.
-              Serving residential and commercial clients across Kanpur with
-              over 10 years of excellence.
+              Kanpur&apos;s premier interior design studio. We create beautiful,
+              functional interiors that reflect your unique style. Serving
+              residential and commercial clients across Kanpur with over 10
+              years of excellence.
             </p>
             <div className="text-sm text-gray-400">
               <p className="font-semibold text-amber-400 mb-2">Keywords:</p>

@@ -135,9 +135,9 @@ export default function PortfolioPage() {
                 Our Interior Design Portfolio
               </h1>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                Explore our collection of completed projects across Kanpur.
-                Each project showcases our commitment to quality, creativity,
-                and client satisfaction.
+                Explore our collection of completed projects across Kanpur. Each
+                project showcases our commitment to quality, creativity, and
+                client satisfaction.
               </p>
             </header>
 
