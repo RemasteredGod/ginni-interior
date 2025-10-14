@@ -7,16 +7,16 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 
 export const metadata: Metadata = {
-  title: 'Residential Interior Design in Lucknow | Home Interior Services',
+  title: 'Residential Interior Design in Kanpur | Home Interior Services',
   description:
-    'Expert residential interior design services in Lucknow. Transform your home, villa, or apartment with customized interior solutions. Get free consultation from Ginni Interior.',
+    'Expert residential interior design services in Kanpur. Transform your home, villa, or apartment with customized interior solutions. Get free consultation from Ginni Interior.',
   keywords: [
-    'residential interior design Lucknow',
-    'home interior Lucknow',
+    'residential interior design Kanpur',
+    'home interior Kanpur',
     'villa interior design',
-    'apartment interior Lucknow',
+    'apartment interior Kanpur',
     'luxury home interior',
-    '2BHK interior Lucknow',
+    '2BHK interior Kanpur',
     '3BHK interior design',
   ],
   alternates: {
@@ -24,9 +24,9 @@ export const metadata: Metadata = {
       'https://ginni-interior.com/services/residential-interior-design',
   },
   openGraph: {
-    title: 'Residential Interior Design in Lucknow | Ginni Interior',
+    title: 'Residential Interior Design in Kanpur | Ginni Interior',
     description:
-      'Transform your home with expert residential interior design services. 10+ years experience in Lucknow.',
+      'Transform your home with expert residential interior design services. 10+ years experience in Kanpur.',
     url: 'https://ginni-interior.com/services/residential-interior-design',
   },
 };
@@ -46,17 +46,17 @@ export default function ResidentialInteriorPage() {
       telephone: '+91-XXXXXXXXXX',
       address: {
         '@type': 'PostalAddress',
-        addressLocality: 'Lucknow',
+        addressLocality: 'Kanpur',
         addressRegion: 'Uttar Pradesh',
         addressCountry: 'IN',
       },
     },
     areaServed: {
       '@type': 'City',
-      name: 'Lucknow',
+      name: 'Kanpur',
     },
     description:
-      'Expert residential interior design services in Lucknow including complete home makeovers, villa interiors, and apartment design solutions.',
+      'Expert residential interior design services in Kanpur including complete home makeovers, villa interiors, and apartment design solutions.',
     offers: {
       '@type': 'Offer',
       priceCurrency: 'INR',
@@ -101,11 +101,11 @@ export default function ResidentialInteriorPage() {
             <article>
               <header className="mb-12">
                 <h1 className="text-4xl md:text-5xl font-bold mb-4">
-                  Residential Interior Design in Lucknow
+                  Residential Interior Design in Kanpur
                 </h1>
                 <p className="text-xl text-muted-foreground">
                   Transform your house into a dream home with our expert
-                  residential interior design services in Lucknow
+                  residential interior design services in Kanpur
                 </p>
               </header>
 
@@ -113,7 +113,7 @@ export default function ResidentialInteriorPage() {
                 <div>
                   <Image
                     src="/1.jpeg"
-                    alt="Residential Interior Design in Lucknow by Ginni Interior"
+                    alt="Residential Interior Design in Kanpur by Ginni Interior"
                     width={600}
                     height={400}
                     className="rounded-lg w-full"
@@ -272,7 +272,7 @@ export default function ResidentialInteriorPage() {
                 <div className="space-y-4">
                   <div>
                     <h3 className="font-semibold mb-2">
-                      How much does residential interior design cost in Lucknow?
+                      How much does residential interior design cost in Kanpur?
                     </h3>
                     <p className="text-muted-foreground">
                       The cost varies based on space size, materials, and design

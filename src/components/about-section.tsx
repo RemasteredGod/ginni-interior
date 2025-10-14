@@ -66,13 +66,13 @@ const AboutSection = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 font-[family-name:var(--font-playfair)]">
-            About Ginni Interior - Lucknow&apos;s Premier Design Studio
+            About Ginni Interior - Kanpur&apos;s Premier Design Studio
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             With over a decade of experience in interior design, we are
-            Lucknow&apos;s most trusted interior designers, creating
+            Kanpur&apos;s most trusted interior designers, creating
             sophisticated spaces that blend functionality with aesthetic beauty
-            across Gomti Nagar, Hazratganj, Aliganj, and all of Lucknow.
+            across Civil Lines, Swaroop Nagar, Kidwai Nagar, and all of Kanpur.
           </p>
         </motion.div>
 
@@ -85,13 +85,13 @@ const AboutSection = () => {
             className="space-y-6"
           >
             <h3 className="text-3xl font-semibold text-gray-900 font-[family-name:var(--font-playfair)]">
-              Our Story - Lucknow&apos;s Trusted Interior Design Partner
+              Our Story - Kanpur&apos;s Trusted Interior Design Partner
             </h3>
             <p className="text-gray-600 leading-relaxed">
               Founded in 2015, Ginni Interior began as a passion project to
               transform ordinary spaces into extraordinary experiences right
-              here in Lucknow. What started as a small design studio has grown
-              into Lucknow&apos;s premier interior design firm, serving clients
+              here in Kanpur. What started as a small design studio has grown
+              into Kanpur&apos;s premier interior design firm, serving clients
               across residential and commercial sectors in Gomti Nagar,
               Hazratganj, Aliganj, Indira Nagar, and throughout Uttar Pradesh.
             </p>
@@ -99,14 +99,14 @@ const AboutSection = () => {
               Our team of talented designers brings together diverse backgrounds
               in architecture, fine arts, and interior design to create spaces
               that are not just beautiful, but also functional and sustainable.
-              We understand Lucknow&apos;s unique architectural heritage and
+              We understand Kanpur&apos;s unique architectural heritage and
               blend modern design with traditional Awadhi aesthetics.
             </p>
             <p className="text-gray-600 leading-relaxed">
-              <strong>Why Choose Ginni Interior in Lucknow?</strong> We offer
+              <strong>Why Choose Ginni Interior in Kanpur?</strong> We offer
               personalized consultations, affordable pricing, timely delivery,
               and the highest quality materials. Serving 500+ satisfied clients
-              with 4.9★ rating makes us the best interior designer in Lucknow.
+              with 4.9★ rating makes us the best interior designer in Kanpur.
             </p>
           </motion.div>
 

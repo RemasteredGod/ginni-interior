@@ -76,7 +76,7 @@ const HeroSection = () => {
             transition={{ duration: 1, delay: 0.2 }}
             className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-gray-900 via-amber-800 to-orange-700 bg-clip-text text-transparent mb-6 font-[family-name:var(--font-playfair)]"
           >
-            Best Interior Designer in Lucknow
+            Best Interior Designer in Kanpur
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -84,7 +84,7 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.5 }}
             className="text-xl md:text-2xl text-gray-700 mb-4 max-w-3xl mx-auto leading-relaxed"
           >
-            Ginni Interior - Transforming Lucknow Homes & Offices with Modern
+            Ginni Interior - Transforming Kanpur Homes & Offices with Modern
             Elegance
           </motion.p>
           <motion.p
@@ -94,7 +94,7 @@ const HeroSection = () => {
             className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto"
           >
             Award-winning residential & commercial interior design | 10+ Years
-            Experience | 500+ Happy Clients in Lucknow
+            Experience | 500+ Happy Clients in Kanpur
           </motion.p>
         </motion.div>
 

@@ -6,12 +6,12 @@ import Image from 'next/image';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 export const metadata: Metadata = {
-  title: 'Interior Design Blog | Tips, Trends & Ideas for Lucknow Homes',
+  title: 'Interior Design Blog | Tips, Trends & Ideas for Kanpur Homes',
   description:
-    'Expert interior design tips, latest trends, and home decor ideas for Lucknow residents. Learn from professional interior designers at Ginni Interior.',
+    'Expert interior design tips, latest trends, and home decor ideas for Kanpur residents. Learn from professional interior designers at Ginni Interior.',
   keywords: [
     'interior design blog',
-    'home decor tips Lucknow',
+    'home decor tips Kanpur',
     'interior design trends 2025',
     'home renovation ideas',
     'interior design inspiration',
@@ -20,9 +20,9 @@ export const metadata: Metadata = {
     canonical: 'https://ginni-interior.com/blog',
   },
   openGraph: {
-    title: 'Interior Design Blog | Ginni Interior Lucknow',
+    title: 'Interior Design Blog | Ginni Interior Kanpur',
     description:
-      'Get expert interior design tips, trends, and inspiration for your Lucknow home.',
+      'Get expert interior design tips, trends, and inspiration for your Kanpur home.',
     url: 'https://ginni-interior.com/blog',
   },
 };
@@ -30,9 +30,9 @@ export const metadata: Metadata = {
 const blogPosts = [
   {
     slug: 'top-10-interior-design-trends-2025-lucknow',
-    title: 'Top 10 Interior Design Trends for 2025 in Lucknow',
+    title: 'Top 10 Interior Design Trends for 2025 in Kanpur',
     excerpt:
-      'Discover the latest interior design trends that are transforming homes across Lucknow. From sustainable materials to smart home integration.',
+      'Discover the latest interior design trends that are transforming homes across Kanpur. From sustainable materials to smart home integration.',
     date: '2025-01-15',
     category: 'Trends',
     image: '/1.jpeg',
@@ -40,9 +40,9 @@ const blogPosts = [
   },
   {
     slug: 'modular-kitchen-design-guide-lucknow',
-    title: 'Complete Guide to Modular Kitchen Design in Lucknow',
+    title: 'Complete Guide to Modular Kitchen Design in Kanpur',
     excerpt:
-      'Everything you need to know about planning, designing, and installing a modular kitchen in your Lucknow home.',
+      'Everything you need to know about planning, designing, and installing a modular kitchen in your Kanpur home.',
     date: '2025-01-10',
     category: 'Kitchen',
     image: '/3.jpeg',
@@ -52,7 +52,7 @@ const blogPosts = [
     slug: 'small-apartment-interior-design-tips',
     title: '15 Smart Ideas for Small Apartment Interiors',
     excerpt:
-      'Maximize space and style in your compact Lucknow apartment with these expert interior design tips and tricks.',
+      'Maximize space and style in your compact Kanpur apartment with these expert interior design tips and tricks.',
     date: '2025-01-05',
     category: 'Tips',
     image: '/5.jpeg',
@@ -60,9 +60,9 @@ const blogPosts = [
   },
   {
     slug: 'cost-of-interior-design-lucknow-2025',
-    title: 'Interior Design Cost Guide for Lucknow Homes in 2025',
+    title: 'Interior Design Cost Guide for Kanpur Homes in 2025',
     excerpt:
-      'Understand the costs involved in interior design projects in Lucknow with our comprehensive pricing guide.',
+      'Understand the costs involved in interior design projects in Kanpur with our comprehensive pricing guide.',
     date: '2024-12-28',
     category: 'Guide',
     image: '/2.jpeg',
@@ -80,7 +80,7 @@ const blogPosts = [
   },
   {
     slug: 'sustainable-interior-design-lucknow',
-    title: 'Sustainable Interior Design: Eco-Friendly Homes in Lucknow',
+    title: 'Sustainable Interior Design: Eco-Friendly Homes in Kanpur',
     excerpt:
       'Learn how to create beautiful, environmentally conscious interiors with sustainable materials and practices.',
     date: '2024-12-15',
@@ -96,7 +96,7 @@ export default function BlogPage() {
     '@type': 'Blog',
     name: 'Ginni Interior Design Blog',
     description:
-      'Expert interior design tips, trends, and ideas for Lucknow homes',
+      'Expert interior design tips, trends, and ideas for Kanpur homes',
     url: 'https://ginni-interior.com/blog',
     publisher: {
       '@type': 'Organization',
@@ -148,7 +148,7 @@ export default function BlogPage() {
                 Interior Design Blog
               </h1>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                Expert tips, latest trends, and inspiring ideas for your Lucknow
+                Expert tips, latest trends, and inspiring ideas for your Kanpur
                 home
               </p>
             </header>

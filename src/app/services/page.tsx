@@ -13,22 +13,22 @@ import {
 import { Button } from '@/components/ui/button';
 
 export const metadata: Metadata = {
-  title: 'Interior Design Services in Lucknow | Ginni Interior',
+  title: 'Interior Design Services in Kanpur | Ginni Interior',
   description:
-    'Explore our comprehensive interior design services in Lucknow including residential, commercial, modular kitchen, bedroom design, 3D visualization, and complete home renovation solutions.',
+    'Explore our comprehensive interior design services in Kanpur including residential, commercial, modular kitchen, bedroom design, 3D visualization, and complete home renovation solutions.',
   keywords: [
-    'interior design services Lucknow',
+    'interior design services Kanpur',
     'home interior services',
     'commercial interior services',
-    'interior design packages Lucknow',
+    'interior design packages Kanpur',
   ],
   alternates: {
     canonical: 'https://ginni-interior.com/services',
   },
   openGraph: {
-    title: 'Interior Design Services in Lucknow | Ginni Interior',
+    title: 'Interior Design Services in Kanpur | Ginni Interior',
     description:
-      'Complete interior design services for homes and offices in Lucknow. Get expert consultation and customized design solutions.',
+      'Complete interior design services for homes and offices in Kanpur. Get expert consultation and customized design solutions.',
     url: 'https://ginni-interior.com/services',
   },
 };
@@ -38,7 +38,7 @@ const services = [
     title: 'Residential Interior Design',
     slug: 'residential-interior-design',
     description:
-      'Transform your home with our expert residential interior design services in Lucknow.',
+      'Transform your home with our expert residential interior design services in Kanpur.',
     image: '/1.jpeg',
     keywords: 'Home interior, villa design, apartment interior',
   },
@@ -46,7 +46,7 @@ const services = [
     title: 'Commercial Interior Design',
     slug: 'commercial-interior-design',
     description:
-      'Professional office and commercial space design solutions for businesses in Lucknow.',
+      'Professional office and commercial space design solutions for businesses in Kanpur.',
     image: '/2.jpeg',
     keywords: 'Office interior, retail design, workspace design',
   },
@@ -78,7 +78,7 @@ const services = [
     title: 'Complete Home Renovation',
     slug: 'home-renovation',
     description:
-      'Full-service home renovation and remodeling solutions in Lucknow.',
+      'Full-service home renovation and remodeling solutions in Kanpur.',
     image: '/6.jpeg',
     keywords: 'Home renovation, remodeling, interior makeover',
   },
@@ -92,11 +92,11 @@ export default function ServicesPage() {
     provider: {
       '@type': 'LocalBusiness',
       name: 'Ginni Interior',
-      areaServed: 'Lucknow',
+      areaServed: 'Kanpur',
     },
     areaServed: {
       '@type': 'City',
-      name: 'Lucknow',
+      name: 'Kanpur',
     },
   };
 
@@ -112,7 +112,7 @@ export default function ServicesPage() {
           <div className="container mx-auto px-4">
             <header className="text-center mb-12">
               <h1 className="text-4xl md:text-5xl font-bold mb-4">
-                Our Interior Design Services in Lucknow
+                Our Interior Design Services in Kanpur
               </h1>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
                 From residential to commercial spaces, we offer comprehensive
@@ -128,7 +128,7 @@ export default function ServicesPage() {
                 >
                   <Image
                     src={service.image}
-                    alt={`${service.title} in Lucknow - Ginni Interior`}
+                    alt={`${service.title} in Kanpur - Ginni Interior`}
                     width={400}
                     height={300}
                     className="w-full h-48 object-cover"
@@ -159,7 +159,7 @@ export default function ServicesPage() {
                     10+ Years Experience
                   </h3>
                   <p>
-                    Serving Lucknow with excellence in interior design since
+                    Serving Kanpur with excellence in interior design since
                     2014
                   </p>
                 </div>

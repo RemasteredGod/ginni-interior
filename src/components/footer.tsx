@@ -33,12 +33,12 @@ const Footer = () => {
   ];
 
   const serviceAreas = [
-    'Gomti Nagar',
-    'Hazratganj',
-    'Aliganj',
-    'Indira Nagar',
-    'Alambagh',
-    'Mahanagar',
+    'Civil Lines',
+    'Swaroop Nagar',
+    'Kidwai Nagar',
+    'Govind Nagar',
+    'Kakadeo',
+    'Kalyanpur',
   ];
 
   return (
@@ -50,7 +50,7 @@ const Footer = () => {
             <div className="flex items-center space-x-3 mb-4">
               <Image
                 src="/ginni-logo.svg"
-                alt="Ginni Interior Logo - Best Interior Designer in Lucknow"
+                alt="Ginni Interior Logo - Best Interior Designer in Kanpur"
                 width={48}
                 height={48}
                 className="h-12 w-auto"
@@ -60,15 +60,15 @@ const Footer = () => {
               </span>
             </div>
             <p className="text-gray-300 mb-6 max-w-md">
-              Lucknow&apos;s premier interior design studio. We create
+              Kanpur&apos;s premier interior design studio. We create
               beautiful, functional interiors that reflect your unique style.
-              Serving residential and commercial clients across Lucknow with
+              Serving residential and commercial clients across Kanpur with
               over 10 years of excellence.
             </p>
             <div className="text-sm text-gray-400">
               <p className="font-semibold text-amber-400 mb-2">Keywords:</p>
               <p>
-                Interior Designer Lucknow • Home Interior • Office Design •
+                Interior Designer Kanpur • Home Interior • Office Design •
                 Modular Kitchen • 3D Visualization • Renovation Services
               </p>
             </div>
@@ -91,7 +91,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Service Areas in Lucknow */}
+          {/* Service Areas in Kanpur */}
           <div>
             <h3 className="text-lg font-semibold mb-4">Service Areas</h3>
             <ul className="space-y-2 text-gray-300">
@@ -101,7 +101,7 @@ const Footer = () => {
                 </li>
               ))}
             </ul>
-            <p className="text-sm text-gray-400 mt-3">& All of Lucknow</p>
+            <p className="text-sm text-gray-400 mt-3">& All of Kanpur</p>
           </div>
 
           {/* Contact Info */}
@@ -127,7 +127,7 @@ const Footer = () => {
                 India
               </p>
               <p className="pt-2 text-amber-400 font-semibold">
-                Serving Lucknow & Nearby Areas
+                Serving Kanpur & Nearby Areas
               </p>
             </div>
           </div>
@@ -147,7 +147,7 @@ const Footer = () => {
               <Award className="h-8 w-8 text-amber-400" />
               <div>
                 <p className="font-semibold text-sm">Award Winning</p>
-                <p className="text-xs text-gray-400">Best in Lucknow 2024</p>
+                <p className="text-xs text-gray-400">Best in Kanpur 2024</p>
               </div>
             </div>
             <div className="flex items-center space-x-3">

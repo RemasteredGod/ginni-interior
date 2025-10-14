@@ -4,7 +4,7 @@ import { Metadata } from 'next';
 export const metadata: Metadata = {
   title: '404 - Page Not Found',
   description:
-    'The page you are looking for does not exist. Explore our interior design services in Lucknow.',
+    'The page you are looking for does not exist. Explore our interior design services in Kanpur.',
   robots: {
     index: false,
     follow: true,
@@ -74,7 +74,7 @@ export default function NotFound() {
         {/* Popular Services */}
         <div className="bg-white rounded-2xl shadow-lg p-8 max-w-2xl mx-auto mb-8">
           <h3 className="text-2xl font-serif font-bold text-neutral-900 mb-6">
-            Popular Services in Lucknow
+            Popular Services in Kanpur
           </h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
             <Link
@@ -135,7 +135,7 @@ export default function NotFound() {
           </h3>
           <p className="text-neutral-300 mb-6">
             Our team is here to assist you with all your interior design needs
-            in Lucknow
+            in Kanpur
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a

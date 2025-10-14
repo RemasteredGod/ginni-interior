@@ -6,12 +6,12 @@ import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 
 export const metadata: Metadata = {
-  title: 'Interior Design Portfolio Lucknow | Our Completed Projects',
+  title: 'Interior Design Portfolio Kanpur | Our Completed Projects',
   description:
-    'View our portfolio of completed interior design projects in Lucknow. Residential homes, commercial offices, villas, and more. Get inspired for your next project with Ginni Interior.',
+    'View our portfolio of completed interior design projects in Kanpur. Residential homes, commercial offices, villas, and more. Get inspired for your next project with Ginni Interior.',
   keywords: [
-    'interior design portfolio Lucknow',
-    'completed projects Lucknow',
+    'interior design portfolio Kanpur',
+    'completed projects Kanpur',
     'interior design gallery',
     'home interior projects',
     'before after interior',
@@ -20,16 +20,16 @@ export const metadata: Metadata = {
     canonical: 'https://ginni-interior.com/portfolio',
   },
   openGraph: {
-    title: 'Interior Design Portfolio | Ginni Interior Lucknow',
+    title: 'Interior Design Portfolio | Ginni Interior Kanpur',
     description:
-      'Explore our stunning portfolio of residential and commercial interior design projects in Lucknow.',
+      'Explore our stunning portfolio of residential and commercial interior design projects in Kanpur.',
     url: 'https://ginni-interior.com/portfolio',
     images: [
       {
         url: '/1.jpeg',
         width: 1200,
         height: 630,
-        alt: 'Interior Design Portfolio - Ginni Interior Lucknow',
+        alt: 'Interior Design Portfolio - Ginni Interior Kanpur',
       },
     ],
   },
@@ -38,54 +38,54 @@ export const metadata: Metadata = {
 const portfolioProjects = [
   {
     id: 1,
-    title: 'Modern Villa Interior - Gomti Nagar',
+    title: 'Modern Villa Interior - Civil Lines',
     category: 'Residential',
-    location: 'Gomti Nagar, Lucknow',
+    location: 'Civil Lines, Kanpur',
     image: '/1.jpeg',
     description: 'Luxurious 4BHK villa with contemporary design elements',
     area: '3500 sq ft',
   },
   {
     id: 2,
-    title: 'Corporate Office - Hazratganj',
+    title: 'Corporate Office - Swaroop Nagar',
     category: 'Commercial',
-    location: 'Hazratganj, Lucknow',
+    location: 'Swaroop Nagar, Kanpur',
     image: '/2.jpeg',
     description: 'Professional office space with modern amenities',
     area: '5000 sq ft',
   },
   {
     id: 3,
-    title: 'Modular Kitchen - Aliganj',
+    title: 'Modular Kitchen - Kidwai Nagar',
     category: 'Kitchen',
-    location: 'Aliganj, Lucknow',
+    location: 'Kidwai Nagar, Kanpur',
     image: '/3.jpeg',
     description: 'Smart modular kitchen with premium fittings',
     area: '200 sq ft',
   },
   {
     id: 4,
-    title: 'Master Bedroom Suite - Indira Nagar',
+    title: 'Master Bedroom Suite - Govind Nagar',
     category: 'Bedroom',
-    location: 'Indira Nagar, Lucknow',
+    location: 'Govind Nagar, Kanpur',
     image: '/4.jpeg',
     description: 'Elegant master bedroom with walk-in wardrobe',
     area: '400 sq ft',
   },
   {
     id: 5,
-    title: 'Luxury Apartment - Eldeco',
+    title: 'Luxury Apartment - Kakadeo',
     category: 'Residential',
-    location: 'Eldeco, Lucknow',
+    location: 'Kakadeo, Kanpur',
     image: '/5.jpeg',
     description: 'Complete 3BHK apartment interior design',
     area: '1800 sq ft',
   },
   {
     id: 6,
-    title: 'Retail Showroom - Alambagh',
+    title: 'Retail Showroom - Kalyanpur',
     category: 'Commercial',
-    location: 'Alambagh, Lucknow',
+    location: 'Kalyanpur, Kanpur',
     image: '/6.jpeg',
     description: 'Eye-catching retail space design',
     area: '2500 sq ft',
@@ -97,7 +97,7 @@ export default function PortfolioPage() {
     '@context': 'https://schema.org',
     '@type': 'ImageGallery',
     name: 'Interior Design Portfolio - Ginni Interior',
-    description: 'Portfolio of completed interior design projects in Lucknow',
+    description: 'Portfolio of completed interior design projects in Kanpur',
     url: 'https://ginni-interior.com/portfolio',
     image: portfolioProjects.map((project) => ({
       '@type': 'ImageObject',
@@ -135,7 +135,7 @@ export default function PortfolioPage() {
                 Our Interior Design Portfolio
               </h1>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                Explore our collection of completed projects across Lucknow.
+                Explore our collection of completed projects across Kanpur.
                 Each project showcases our commitment to quality, creativity,
                 and client satisfaction.
               </p>
@@ -182,7 +182,7 @@ export default function PortfolioPage() {
                 Want to See Your Space Transformed?
               </h2>
               <p className="text-xl mb-6 text-muted-foreground">
-                Join our 500+ satisfied clients across Lucknow
+                Join our 500+ satisfied clients across Kanpur
               </p>
               <Link href="/contact">
                 <Button size="lg">Start Your Project Today</Button>

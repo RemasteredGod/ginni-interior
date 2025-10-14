@@ -14,9 +14,9 @@ const ServicesSection = () => {
   const services = [
     {
       icon: Home,
-      title: 'Residential Interior Design Lucknow',
+      title: 'Residential Interior Design Kanpur',
       description:
-        'Transform your Lucknow home into a personalized sanctuary with our comprehensive residential design services. From concept to completion, we create spaces that reflect your lifestyle across all areas of Lucknow.',
+        'Transform your Kanpur home into a personalized sanctuary with our comprehensive residential design services. From concept to completion, we create spaces that reflect your lifestyle across all areas of Kanpur.',
       features: [
         'Modular Kitchen Design',
         'Bedroom & Living Room',
@@ -26,11 +26,11 @@ const ServicesSection = () => {
     },
     {
       icon: Building2,
-      title: 'Commercial Interior Design Lucknow',
+      title: 'Commercial Interior Design Kanpur',
       description:
-        'Elevate your Lucknow business environment with professional commercial interior design. We create functional, inspiring workspaces that enhance productivity and brand identity for offices, retail, and restaurants.',
+        'Elevate your Kanpur business environment with professional commercial interior design. We create functional, inspiring workspaces that enhance productivity and brand identity for offices, retail, and restaurants.',
       features: [
-        'Office Interior Lucknow',
+        'Office Interior Kanpur',
         'Retail & Restaurant Design',
         'Corporate Branding',
         'Ergonomic Workspaces',
@@ -38,9 +38,9 @@ const ServicesSection = () => {
     },
     {
       icon: Wrench,
-      title: 'Home Renovation Services Lucknow',
+      title: 'Home Renovation Services Kanpur',
       description:
-        'Breathe new life into existing Lucknow properties with our expert renovation services. We modernize and optimize your interiors while preserving architectural integrity and staying within budget.',
+        'Breathe new life into existing Kanpur properties with our expert renovation services. We modernize and optimize your interiors while preserving architectural integrity and staying within budget.',
       features: [
         'Complete Home Makeover',
         'Kitchen & Bathroom Remodel',
@@ -52,7 +52,7 @@ const ServicesSection = () => {
       icon: Eye,
       title: '3D Visualization & Virtual Tours',
       description:
-        'Experience your future Lucknow space before construction begins with our advanced 3D visualization services. Make informed decisions with photorealistic renderings and virtual walkthroughs.',
+        'Experience your future Kanpur space before construction begins with our advanced 3D visualization services. Make informed decisions with photorealistic renderings and virtual walkthroughs.',
       features: [
         'Photorealistic 3D Renders',
         '360° Virtual Tours',
@@ -104,10 +104,10 @@ const ServicesSection = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 font-[family-name:var(--font-playfair)]">
-            Interior Design Services in Lucknow
+            Interior Design Services in Kanpur
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            We offer comprehensive interior design solutions tailored to Lucknow
+            We offer comprehensive interior design solutions tailored to Kanpur
             homes and businesses. From modern apartments to luxury villas,
             offices to retail spaces - we bring your vision to life.
           </p>

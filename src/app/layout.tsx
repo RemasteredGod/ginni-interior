@@ -16,30 +16,30 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://ginni-interior.com'),
   title: {
     default:
-      'Ginni Interior - Best Interior Designer in Lucknow | Home & Office Interiors',
-    template: '%s | Ginni Interior Lucknow',
+      'Ginni Interior - Best Interior Designer in Kanpur | Home & Office Interiors',
+    template: '%s | Ginni Interior Kanpur',
   },
   description:
-    'Premier interior designer in Lucknow specializing in residential and commercial spaces. Transform your home, office, or villa with luxury interior design solutions in Lucknow. Award-winning designs, 3D visualization & expert consultation.',
+    'Premier interior designer in Kanpur specializing in residential and commercial spaces. Transform your home, office, or villa with luxury interior design solutions in Kanpur. Award-winning designs, 3D visualization & expert consultation.',
   keywords: [
-    'interior designer in Lucknow',
-    'interior design Lucknow',
-    'home interior Lucknow',
-    'best interior designer Lucknow',
-    'office interior Lucknow',
-    'commercial interior design Lucknow',
-    'luxury interior Lucknow',
-    'modular kitchen Lucknow',
-    'bedroom interior Lucknow',
-    'living room design Lucknow',
-    'villa interior Lucknow',
-    '3D interior design Lucknow',
-    'interior renovation Lucknow',
-    'affordable interior designer Lucknow',
-    'Ginni Interior Lucknow',
-    'top interior designer in Lucknow',
-    'residential interior Lucknow',
-    'interior decorator Lucknow',
+    'interior designer in Kanpur',
+    'interior design Kanpur',
+    'home interior Kanpur',
+    'best interior designer Kanpur',
+    'office interior Kanpur',
+    'commercial interior design Kanpur',
+    'luxury interior Kanpur',
+    'modular kitchen Kanpur',
+    'bedroom interior Kanpur',
+    'living room design Kanpur',
+    'villa interior Kanpur',
+    '3D interior design Kanpur',
+    'interior renovation Kanpur',
+    'affordable interior designer Kanpur',
+    'Ginni Interior Kanpur',
+    'top interior designer in Kanpur',
+    'residential interior Kanpur',
+    'interior decorator Kanpur',
   ],
   authors: [{ name: 'Ginni Interior', url: 'https://ginni-interior.com' }],
   creator: 'Ginni Interior',
@@ -51,9 +51,9 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title:
-      'Ginni Interior - Best Interior Designer in Lucknow | Home & Office Interiors',
+      'Ginni Interior - Best Interior Designer in Kanpur | Home & Office Interiors',
     description:
-      "Transform your space with Lucknow's leading interior designer. Specializing in residential & commercial interiors with 10+ years of experience. Get free consultation today!",
+      "Transform your space with Kanpur's leading interior designer. Specializing in residential & commercial interiors with 10+ years of experience. Get free consultation today!",
     url: 'https://ginni-interior.com',
     siteName: 'Ginni Interior',
     locale: 'en_IN',
@@ -63,15 +63,15 @@ export const metadata: Metadata = {
         url: '/ginni-logo.svg',
         width: 1200,
         height: 630,
-        alt: 'Ginni Interior - Best Interior Designer in Lucknow',
+        alt: 'Ginni Interior - Best Interior Designer in Kanpur',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Ginni Interior - Best Interior Designer in Lucknow',
+    title: 'Ginni Interior - Best Interior Designer in Kanpur',
     description:
-      "Transform your space with Lucknow's leading interior designer. Residential & commercial design experts.",
+      "Transform your space with Kanpur's leading interior designer. Residential & commercial design experts.",
     images: ['/ginni-logo.svg'],
     creator: '@ginniinterior',
   },
@@ -90,7 +90,7 @@ export const metadata: Metadata = {
     canonical: 'https://ginni-interior.com',
   },
   category: 'Interior Design',
-  classification: 'Interior Design Services in Lucknow',
+  classification: 'Interior Design Services in Kanpur',
   icons: {
     icon: '/ginni-logo.svg',
     apple: '/ginni-logo.svg',
@@ -111,22 +111,22 @@ export default function RootLayout({
     name: 'Ginni Interior',
     image: 'https://ginni-interior.com/ginni-logo.svg',
     description:
-      'Premier interior designer in Lucknow specializing in residential and commercial spaces. Award-winning interior design solutions.',
+      'Premier interior designer in Kanpur specializing in residential and commercial spaces. Award-winning interior design solutions.',
     url: 'https://ginni-interior.com',
     telephone: '+91-XXXXXXXXXX',
     priceRange: '$$',
     address: {
       '@type': 'PostalAddress',
       streetAddress: 'Your Street Address',
-      addressLocality: 'Lucknow',
+      addressLocality: 'Kanpur',
       addressRegion: 'Uttar Pradesh',
-      postalCode: '226001',
+      postalCode: '208001',
       addressCountry: 'IN',
     },
     geo: {
       '@type': 'GeoCoordinates',
-      latitude: 26.8467,
-      longitude: 80.9462,
+      latitude: 26.4499,
+      longitude: 80.3319,
     },
     openingHoursSpecification: [
       {
@@ -145,7 +145,7 @@ export default function RootLayout({
     ],
     areaServed: {
       '@type': 'City',
-      name: 'Lucknow',
+      name: 'Kanpur',
     },
     sameAs: [
       'https://www.facebook.com/ginniinterior',
@@ -167,9 +167,9 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
         <meta name="geo.region" content="IN-UP" />
-        <meta name="geo.placename" content="Lucknow" />
-        <meta name="geo.position" content="26.8467;80.9462" />
-        <meta name="ICBM" content="26.8467, 80.9462" />
+        <meta name="geo.placename" content="Kanpur" />
+        <meta name="geo.position" content="26.4499;80.3319" />
+        <meta name="ICBM" content="26.4499, 80.3319" />
       </head>
       <body className={`${inter.variable} ${playfair.variable} antialiased`}>
         {children}

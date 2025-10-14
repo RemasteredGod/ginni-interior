@@ -6,22 +6,22 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 
 export const metadata: Metadata = {
-  title: 'Client Reviews & Testimonials | Ginni Interior Lucknow',
+  title: 'Client Reviews & Testimonials | Ginni Interior Kanpur',
   description:
-    'Read genuine reviews and testimonials from our satisfied clients across Lucknow. See why Ginni Interior is the top-rated interior designer in Lucknow with 4.9/5 rating.',
+    'Read genuine reviews and testimonials from our satisfied clients across Kanpur. See why Ginni Interior is the top-rated interior designer in Kanpur with 4.9/5 rating.',
   keywords: [
-    'interior designer reviews Lucknow',
+    'interior designer reviews Kanpur',
     'Ginni Interior testimonials',
     'client reviews interior design',
-    'best interior designer Lucknow reviews',
+    'best interior designer Kanpur reviews',
   ],
   alternates: {
     canonical: 'https://ginni-interior.com/testimonials',
   },
   openGraph: {
-    title: 'Client Testimonials | Ginni Interior Lucknow',
+    title: 'Client Testimonials | Ginni Interior Kanpur',
     description:
-      '500+ happy clients and 4.9/5 rating. Read authentic reviews from our interior design clients in Lucknow.',
+      '500+ happy clients and 4.9/5 rating. Read authentic reviews from our interior design clients in Kanpur.',
     url: 'https://ginni-interior.com/testimonials',
   },
 };
@@ -30,17 +30,17 @@ const testimonials = [
   {
     id: 1,
     name: 'Priya Sharma',
-    location: 'Gomti Nagar, Lucknow',
+    location: 'Civil Lines, Kanpur',
     rating: 5,
     date: '2024-09-15',
     review:
-      'Ginni Interior transformed our 3BHK apartment beautifully. The team was professional, creative, and completed the project on time. Highly recommended for anyone looking for quality interior design in Lucknow!',
+      'Ginni Interior transformed our 3BHK apartment beautifully. The team was professional, creative, and completed the project on time. Highly recommended for anyone looking for quality interior design in Kanpur!',
     project: 'Residential Interior',
   },
   {
     id: 2,
     name: 'Rajesh Kumar',
-    location: 'Hazratganj, Lucknow',
+    location: 'Swaroop Nagar, Kanpur',
     rating: 5,
     date: '2024-08-20',
     review:
@@ -50,7 +50,7 @@ const testimonials = [
   {
     id: 3,
     name: 'Anjali Verma',
-    location: 'Aliganj, Lucknow',
+    location: 'Kidwai Nagar, Kanpur',
     rating: 5,
     date: '2024-07-10',
     review:
@@ -60,7 +60,7 @@ const testimonials = [
   {
     id: 4,
     name: 'Amit Singh',
-    location: 'Indira Nagar, Lucknow',
+    location: 'Govind Nagar, Kanpur',
     rating: 5,
     date: '2024-06-05',
     review:
@@ -70,17 +70,17 @@ const testimonials = [
   {
     id: 5,
     name: 'Neha Gupta',
-    location: 'Eldeco, Lucknow',
+    location: 'Kakadeo, Kanpur',
     rating: 5,
     date: '2024-05-18',
     review:
-      'Best interior designer in Lucknow! The 3D visualization helped us see exactly how our home would look. The execution was flawless.',
+      'Best interior designer in Kanpur! The 3D visualization helped us see exactly how our home would look. The execution was flawless.',
     project: 'Residential Interior',
   },
   {
     id: 6,
     name: 'Vikram Mishra',
-    location: 'Alambagh, Lucknow',
+    location: 'Kalyanpur, Kanpur',
     rating: 4,
     date: '2024-04-22',
     review:
@@ -98,11 +98,11 @@ export default function TestimonialsPage() {
     url: 'https://ginni-interior.com',
     image: 'https://ginni-interior.com/ginni-logo.svg',
     description:
-      'Premier interior designer in Lucknow specializing in residential and commercial spaces with 10+ years of experience.',
+      'Premier interior designer in Kanpur specializing in residential and commercial spaces with 10+ years of experience.',
     address: {
       '@type': 'PostalAddress',
       streetAddress: 'Your Street Address',
-      addressLocality: 'Lucknow',
+      addressLocality: 'Kanpur',
       addressRegion: 'Uttar Pradesh',
       postalCode: '226001',
       addressCountry: 'IN',
@@ -162,7 +162,7 @@ export default function TestimonialsPage() {
               </h1>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-6">
                 Don&apos;t just take our word for it. Here&apos;s what our
-                clients across Lucknow have to say about their experience with
+                clients across Kanpur have to say about their experience with
                 Ginni Interior.
               </p>
               <div className="flex items-center justify-center gap-2">
@@ -212,14 +212,14 @@ export default function TestimonialsPage() {
             {/* Trust Badges */}
             <section className="bg-secondary/50 p-12 rounded-lg text-center mb-16">
               <h2 className="text-3xl font-bold mb-8">
-                Trusted by 500+ Clients in Lucknow
+                Trusted by 500+ Clients in Kanpur
               </h2>
               <div className="grid md:grid-cols-4 gap-8">
                 <div>
                   <div className="text-4xl mb-2">🏆</div>
                   <h3 className="font-semibold mb-2">Award Winning</h3>
                   <p className="text-sm text-muted-foreground">
-                    Best Interior Designer Lucknow 2023
+                    Best Interior Designer Kanpur 2023
                   </p>
                 </div>
                 <div>
